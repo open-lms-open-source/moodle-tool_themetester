@@ -23,3 +23,4 @@
  */
 
 $string['pluginname'] = 'Theme tester';
+$string['privacy:metadata'] = 'The Theme tester plugin does not store any personal data.';

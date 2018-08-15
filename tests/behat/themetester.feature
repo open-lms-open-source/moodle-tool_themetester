@@ -16,7 +16,7 @@
 # Tests for Theme Tester
 #
 # @package    tool_themetester
-# @copyright  2015 Moodlerooms
+# @copyright  2015 Blackboard
 # @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
 

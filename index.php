@@ -45,9 +45,11 @@ echo $OUTPUT->box_start();
 echo $OUTPUT->container('This page contains a set of sample elements used on this site. It can be used to ensure that everything has been correctly themed (remember to check in a right-to-left language too), and for developers to see examples of how to implement particular elements. Developers: if you need an element that is not represented here, add it here first - the idea is to build up a library of all the elements used across the site.');
 
 echo $OUTPUT->container_start();
-echo $OUTPUT->heading('Moodle elements', 3);
 
 $contents = array(
+    'Bootswatch 4' => 'bootswatch4.php',
+    'Bootstrap 4' => 'docs/4.0/index.php',
+    'Font Awesome 4.7' => 'fontawesome.php',
     'Headings' => 'headings.php',
     'Common tags' => 'common.php',
     'Lists' => 'lists.php',
@@ -61,10 +63,11 @@ $contents = array(
     'Confirmation' => 'confirm.php',
     'Progress Bars' => 'progress.php',
     'Page Layouts' => 'pagelayouts.php',
-    'Bootstrap CSS' => 'bs_css.php',
-    'Bootstrap Components' => 'bs_components.php',
-    'Bootstrap Javascript' => 'bs_javascript.php',
-    'Bootswatch Examples' => 'bootswatch.php',
+    'Bootstrap 3 CSS' => 'bs3_css.php',
+    'Bootstrap 3 Components' => 'bs3_components.php',
+    'Bootstrap 3 Javascript' => 'bs3_javascript.php',
+    'Bootswatch 3 Examples' => 'bootswatch3.php',
+    'Bootstrap 4 alpha 4 docs' => 'docs/4.0.0-alpha.4/getting-started/introduction/index.php',
 );
 
 echo html_writer::start_tag('ul');

@@ -83,8 +83,8 @@ Feature: The renderers are used in the theme tester, and don't throw warning or 
     And I follow "Progress Bars"
     And I follow "Back to index"
 
-    And I follow "Bootstrap CSS"
+    And I follow "Bootstrap 3 CSS"
     And I follow "Back to index"
 
-    And I follow "Bootstrap Components"
+    And I follow "Bootstrap 3 Components"
     And I follow "Back to index"

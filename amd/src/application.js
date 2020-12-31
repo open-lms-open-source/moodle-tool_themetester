@@ -12,6 +12,7 @@
 
 /* global Clipboard: false, anchors: false, Holder: false */
 
+// eslint-disable-next-line no-unused-vars
 define(['jquery', 'theme_boost/popover'], function($, unsused) {
   'use strict';
     return {
@@ -42,7 +43,8 @@ define(['jquery', 'theme_boost/popover'], function($, unsused) {
                   var $button = $(event.relatedTarget); // Button that triggered the modal
                   var recipient = $button.data('whatever'); // Extract info from data-* attributes
                   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-                  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or
+                  // other methods instead.
                   var $modal = $(this);
                   $modal.find('.modal-title').text('New message to ' + recipient);
                   $modal.find('.modal-body input').val(recipient);
@@ -55,7 +57,8 @@ define(['jquery', 'theme_boost/popover'], function($, unsused) {
 
                 // Insert copy to clipboard button before .highlight
                 $('figure.highlight, div.highlight').each(function() {
-                  var btnHtml = '<div class="bd-clipboard"><button class="btn-clipboard" title="Copy to clipboard">Copy</button></div>';
+                  var btnHtml = '<div class="bd-clipboard"><button class="btn-clipboard"' +
+                      ' title="Copy to clipboard">Copy</button></div>';
                   $(this).before(btnHtml);
                   $('.btn-clipboard')
                     .tooltip()

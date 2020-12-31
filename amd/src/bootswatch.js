@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 define(['jquery', 'theme_boost/popover'], function($, unsused) {
     return {
         init: function() {

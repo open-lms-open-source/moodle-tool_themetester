@@ -19,7 +19,6 @@
 # @copyright  2015 Blackboard
 # @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 
-
 @tool @tool_themetester
 Feature: The renderers are used in the theme tester, and don't throw warning or errors
 

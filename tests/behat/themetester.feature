@@ -27,7 +27,6 @@ Feature: The renderers are used in the theme tester, and don't throw warning or 
 
   @javascript
   Scenario: No warnings thrown from renderers
-    Given I skip because "I will be reviewed on INT-20670"
     Given I am on site homepage
     When I navigate to "Development > Theme tester" in site administration
     And I follow "Headings"

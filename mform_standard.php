@@ -54,11 +54,11 @@ class standard_form_elements extends moodleform {
 
         $mform =& $this->_form;
 
-        $mform->addElement('header', null, 'Controls');
+        $mform->addElement('header', 'controls', 'Controls');
 
         $mform->addElement('checkbox', 'disableelements', 'Disable all elements below', 'Use to test disabled state styles and functionality.');
 
-        $mform->addElement('header', null, 'Header element');
+        $mform->addElement('header', 'header_element', 'Header element');
 
         $mform->addElement('button', 'buttonfield', 'Button text');
         $mform->disabledIf('buttonfield', 'disableelements', 'checked');
@@ -171,7 +171,7 @@ class standard_form_elements extends moodleform {
         $mform->setType('urlfield', PARAM_NOTAGS);
         $mform->disabledIf('urlfield', 'disableelements', 'checked');
 
-        $mform->addElement('header', null, 'Another Header element');
+        $mform->addElement('header', 'another_header_element', 'Another Header element');
 
         $mform->addElement('static', 'staticfield', 'A static element', 'A static field\'s value');
 

@@ -60,11 +60,11 @@ class grouped_form_elements extends moodleform {
 
         $mform =& $this->_form;
 
-        $mform->addElement('header', null, 'Controls');
+        $mform->addElement('header', 'controls', 'Controls');
 
         $mform->addElement('checkbox', 'disableelements', 'Disable all elements below', 'Use to test disabled state styles and functionality.');
 
-        $mform->addElement('header', null, 'Heading element');
+        $mform->addElement('header', 'heading_element', 'Heading element');
 
         // TODO: add more examples of grouped form elements e.g. buttons etc.
         $radioGroup=array();

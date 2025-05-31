@@ -50,16 +50,16 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
 echo $OUTPUT->container('Examples of different types of form.');
 echo $OUTPUT->container_start();
 
-echo html_writer::alist(array(
-    html_writer::link(new moodle_url('mform_standard.php'), 'Standard form elements'),
-    html_writer::link(new moodle_url('mform_grouped.php'), 'Grouped form elements'),
+echo \core\output\html_writer::alist(array(
+    \core\output\html_writer::link(new moodle_url('mform_standard.php'), 'Standard form elements'),
+    \core\output\html_writer::link(new moodle_url('mform_grouped.php'), 'Grouped form elements'),
 ));
 
 echo $OUTPUT->container_end();

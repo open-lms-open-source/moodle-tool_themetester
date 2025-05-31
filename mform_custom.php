@@ -49,7 +49,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
+echo \core\output\html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -68,9 +68,9 @@ class tabular_form extends moodleform {
         // $renderer->clearAllTemplates()  might be useful here depending on requirements
 
         // limitation - we can't use the 'html_writer:table()' or 'flexible_table()' methods?
-        $thead_row = html_writer::tag('thead', html_writer::tag('tr', html_writer::tag('th','Select', array('class'=>'header c0', 'scope'=>'col')) . html_writer::tag('th','Item', array('class'=>'header c1', 'scope'=>'col')) ) );
-        $template_wrap = html_writer::tag('table', $thead_row . '{content}', array('class' => 'generaltable fcontainer') );
-        $template_element = html_writer::tag('tr', html_writer::tag('td', '<!-- END error -->{element}', array('class' => 'felement')) . html_writer::tag('td', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{label}', array('class' => 'fitemtitle')), array('class' => 'fitem') );
+        $thead_row = \core\output\html_writer::tag('thead', \core\output\html_writer::tag('tr', \core\output\html_writer::tag('th','Select', array('class'=>'header c0', 'scope'=>'col')) . \core\output\html_writer::tag('th','Item', array('class'=>'header c1', 'scope'=>'col')) ) );
+        $template_wrap = \core\output\html_writer::tag('table', $thead_row . '{content}', array('class' => 'generaltable fcontainer') );
+        $template_element = \core\output\html_writer::tag('tr', \core\output\html_writer::tag('td', '<!-- END error -->{element}', array('class' => 'felement')) . \core\output\html_writer::tag('td', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{label}', array('class' => 'fitemtitle')), array('class' => 'fitem') );
 
         $renderer->setGroupTemplate($template_wrap, 'tabular_checkboxes');
         $renderer->setGroupElementTemplate($template_element, 'tabular_checkboxes');
@@ -102,7 +102,7 @@ $form->display();
 
 
 //
-echo html_writer::empty_tag('hr');
+echo \core\output\html_writer::empty_tag('hr');
 echo $OUTPUT->heading('Form with grouped \'action\' controls above \'data\' controls (class "actionform"), by providing new template markup to the Renderer.', 3);
 
 class action_form extends moodleform {
@@ -114,8 +114,8 @@ class action_form extends moodleform {
         $renderer =& $mform->defaultRenderer();
 
         // 'action' controls grouped together here
-        $template_a_wrap = html_writer::tag('div', '{content}', array('class' => 'fcontainer actionform') );
-        $template_a_element = html_writer::tag('div', html_writer::tag('div', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{label}', array('class' => 'fitemtitle')) . html_writer::tag('div', '<!-- END error -->{element}', array('class' => 'felement')), array('class' => 'fitem') );
+        $template_a_wrap = \core\output\html_writer::tag('div', '{content}', array('class' => 'fcontainer actionform') );
+        $template_a_element = \core\output\html_writer::tag('div', \core\output\html_writer::tag('div', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{label}', array('class' => 'fitemtitle')) . \core\output\html_writer::tag('div', '<!-- END error -->{element}', array('class' => 'felement')), array('class' => 'fitem') );
 
         $renderer->setGroupTemplate($template_a_wrap, 'action_group');
         $renderer->setGroupElementTemplate($template_a_element, 'action_group');
@@ -133,9 +133,9 @@ class action_form extends moodleform {
         $mform->addElement('submit', 'submit_btn_2', 'Submit');
 
         // render the table containing more controls
-        $thead_row = html_writer::tag('thead', html_writer::tag('tr', html_writer::tag('th','Select', array('class'=>'header c0', 'scope'=>'col')) . html_writer::tag('th','Item', array('class'=>'header c1', 'scope'=>'col')) ) );
-        $template_b_wrap = html_writer::tag('table', $thead_row . '{content}', array('class' => 'generaltable fcontainer') );
-        $template_b_element = html_writer::tag('tr', html_writer::tag('td', '<!-- END error -->{element}', array('class' => 'felement')) . html_writer::tag('td', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{help}{label}', array('class' => 'fitemtitle')), array('class' => 'fitem') );
+        $thead_row = \core\output\html_writer::tag('thead', \core\output\html_writer::tag('tr', \core\output\html_writer::tag('th','Select', array('class'=>'header c0', 'scope'=>'col')) . \core\output\html_writer::tag('th','Item', array('class'=>'header c1', 'scope'=>'col')) ) );
+        $template_b_wrap = \core\output\html_writer::tag('table', $thead_row . '{content}', array('class' => 'generaltable fcontainer') );
+        $template_b_element = \core\output\html_writer::tag('tr', \core\output\html_writer::tag('td', '<!-- END error -->{element}', array('class' => 'felement')) . \core\output\html_writer::tag('td', '<!-- BEGIN required -->' . $mform->getReqHTML() . '<!-- END required -->{help}{label}', array('class' => 'fitemtitle')), array('class' => 'fitem') );
 
         $renderer->setGroupTemplate($template_b_wrap, 'tabular_checkboxes_2');
         $renderer->setGroupElementTemplate($template_b_element, 'tabular_checkboxes_2');
@@ -157,7 +157,7 @@ $form->display();
 
 
 //
-echo html_writer::empty_tag('hr');
+echo \core\output\html_writer::empty_tag('hr');
 echo $OUTPUT->heading('Minimal forms', 3);
 
 class minimal_form extends moodleform {
@@ -182,13 +182,13 @@ class minimal_form extends moodleform {
     }
 }
 //
-echo html_writer::empty_tag('hr');
+echo \core\output\html_writer::empty_tag('hr');
 $form = new minimal_form( null, array('type'=>'search') );
 $data = $form->get_data();
 $form->display();
 
 //
-echo html_writer::empty_tag('hr');
+echo \core\output\html_writer::empty_tag('hr');
 $form = new minimal_form( null, array('type'=>'single_button') );
 $data = $form->get_data();
 $form->display();

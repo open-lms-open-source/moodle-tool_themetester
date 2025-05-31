@@ -41,7 +41,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
 
 echo $OUTPUT->heading($strheading);
 
@@ -49,12 +49,12 @@ echo $OUTPUT->box_start();
 
 echo $OUTPUT->container_start();
 
-$perpetual = new progress_bar("perpetual");
+$perpetual = new \core\output\progress_bar("perpetual");
 $perpetual->create();
 $perpetual->update(0, 100, "waiting for javascript");
 
 for ($i = 0; $i <= 100; $i += 10) {
-    $progress = new progress_bar("percent$i");
+    $progress = new \core\output\progress_bar("percent$i");
     $progress->create();
     $progress->update($i, 100, "$i% full");
 }

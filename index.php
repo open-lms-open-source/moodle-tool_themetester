@@ -70,13 +70,13 @@ $contents = array(
     'Bootstrap 4 alpha 4 docs' => 'docs/4.0.0-alpha.4/getting-started/introduction/index.php',
 );
 
-echo html_writer::start_tag('ul');
+echo \core\output\html_writer::start_tag('ul');
 foreach ($contents as $title => $file) {
     $url = new moodle_url($file);
-    $link = html_writer::link($url, $title);
-    echo html_writer::tag('li', $link);
+    $link = \core\output\html_writer::link($url, $title);
+    echo \core\output\html_writer::tag('li', $link);
 }
-echo html_writer::end_tag('ul');
+echo \core\output\html_writer::end_tag('ul');
 
 echo $OUTPUT->container_end();
 

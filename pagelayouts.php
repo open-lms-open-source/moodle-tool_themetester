@@ -127,9 +127,9 @@ admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
 if ($layout) {
-    echo html_writer::link(new moodle_url('/admin/tool/themetester/pagelayouts.php'), '&laquo; Back to layouts');
+    echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/pagelayouts.php'), '&laquo; Back to layouts');
 } else {
-    echo html_writer::link(new moodle_url('/admin/tool/themetester/'), '&laquo; Back to index');
+    echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/'), '&laquo; Back to index');
 }
 echo $OUTPUT->heading($strheading);
 
@@ -137,7 +137,7 @@ if ($layout) {
     // display each layout
     echo $OUTPUT->container($layouts[$layout]['description']);
 
-    echo str_repeat(html_writer::tag('p', 'Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu accumsan nulla. Cras elementum tincidunt dictum. Phasellus varius, est non ornare mattis, leo velit congue libero, vitae suscipit ipsum urna sed orci. Pellentesque venenatis pulvinar lobortis. Vestibulum iaculis commodo eros quis volutpat. Morbi vitae dapibus ante. Nullam convallis interdum ipsum, venenatis consequat eros faucibus sed. Pellentesque non tellus vel eros ullamcorper sollicitudin ut in lectus. Sed aliquet gravida porta.'), 5);
+    echo str_repeat(\core\output\html_writer::tag('p', 'Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu accumsan nulla. Cras elementum tincidunt dictum. Phasellus varius, est non ornare mattis, leo velit congue libero, vitae suscipit ipsum urna sed orci. Pellentesque venenatis pulvinar lobortis. Vestibulum iaculis commodo eros quis volutpat. Morbi vitae dapibus ante. Nullam convallis interdum ipsum, venenatis consequat eros faucibus sed. Pellentesque non tellus vel eros ullamcorper sollicitudin ut in lectus. Sed aliquet gravida porta.'), 5);
 } else {
     // display index of layouts
     echo $OUTPUT->container('The links below take you to pages using each of the page layouts that can be defined in the theme.');
@@ -146,21 +146,21 @@ if ($layout) {
         $url = new moodle_url('/admin/tool/themetester/pagelayouts.php', array('layout' => $name));
         $text = $info['name'];
         if ($name != 'popup') {
-            $list[] = html_writer::link($url, $text);
+            $list[] = \core\output\html_writer::link($url, $text);
         } else {
-            $list[] = $OUTPUT->action_link($url, $text, new popup_action('click', $url));
+            $list[] = $OUTPUT->action_link($url, $text, new \core\output\actions\popup_action('click', $url));
         }
     }
 
-    echo html_writer::alist($list);
+    echo \core\output\html_writer::alist($list);
 
     echo $OUTPUT->heading('Developer info', 3);
     echo $OUTPUT->container('Each layout defines:');
-    echo html_writer::alist(array('A file name for the layout template (stored in <code>theme/[themename]/layout/[filename]</code>). If no file exists in the theme, will look for layout files in each parent theme in turn.',
+    echo \core\output\html_writer::alist(array('A file name for the layout template (stored in <code>theme/[themename]/layout/[filename]</code>). If no file exists in the theme, will look for layout files in each parent theme in turn.',
         'A set of regions which are displayed by that file',
         'A default region (used when adding blocks)',
         'A set of options. You can create any options you want in your theme\'s config.php then reference them in the theme layout files via <code>$PAGE->layout_options[\'settingname\']</code>. Typical options include:' .
-        html_writer::alist(array(
+        \core\output\html_writer::alist(array(
         '<strong>langmenu</strong>: whether to show or hide the language menu (if enabled via settings and site has at least two languages installed)',
         '<strong>nofooter</strong>: don\'t include the page footer code',
         '<strong>nocustommenu</strong>: don\'t include the custommenu.',

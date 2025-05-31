@@ -39,7 +39,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
+echo \core\output\html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();

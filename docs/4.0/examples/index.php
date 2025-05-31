@@ -41,7 +41,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo html_writer::link(new moodle_url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>

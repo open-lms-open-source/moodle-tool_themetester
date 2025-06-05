@@ -37,7 +37,7 @@ require_once($CFG->dirroot.'/lib/formslib.php');
 
 
 $strheading = 'Theme Tester: Moodle Forms';
-$url = new moodle_url('/admin/tool/themetester/moodleforms.php');
+$url = new \core\url('/admin/tool/themetester/moodleforms.php');
 
 // Start setting up the page
 $params = array();
@@ -50,7 +50,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -58,8 +58,8 @@ echo $OUTPUT->container('Examples of different types of form.');
 echo $OUTPUT->container_start();
 
 echo \core\output\html_writer::alist(array(
-    \core\output\html_writer::link(new moodle_url('mform_standard.php'), 'Standard form elements'),
-    \core\output\html_writer::link(new moodle_url('mform_grouped.php'), 'Grouped form elements'),
+    \core\output\html_writer::link(new \core\url('mform_standard.php'), 'Standard form elements'),
+    \core\output\html_writer::link(new \core\url('mform_grouped.php'), 'Grouped form elements'),
 ));
 
 echo $OUTPUT->container_end();

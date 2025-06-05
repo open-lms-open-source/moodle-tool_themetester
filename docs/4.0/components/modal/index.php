@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../../../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Bootstrap 4 CSS : Modal';
-$url = new moodle_url('/admin/tool/themetester/bootswatch4.php');
+$url = new \core\url('/admin/tool/themetester/bootswatch4.php');
 
 // Start setting up the page.
 $params = array();
@@ -43,7 +43,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>

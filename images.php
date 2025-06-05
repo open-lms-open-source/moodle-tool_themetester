@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Images';
-$url = new moodle_url('/admin/tool/themetester/images.php');
+$url = new \core\url('/admin/tool/themetester/images.php');
 
 // Start setting up the page
 $params = array();
@@ -38,7 +38,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -86,12 +86,12 @@ echo \core\output\html_writer::tag('p', 'This will set the title to be the same 
 
 echo \core\output\html_writer::tag('p', 'If you want to create a linked icon use $OUTPUT->action_icon(). Note that action_icon requires a pix_icon object, not the rendered string so make sure the second argument is "new \core\output\pix_icon()" not $OUTPUT->pix_icon().');
 
-$url = new moodle_url('index.php');
+$url = new \core\url('index.php');
 $icon = new \core\output\pix_icon('t/add', 'Add');
 echo $OUTPUT->action_icon($url, $icon);
 
 echo \core\output\html_writer::tag('p', 'action_icon() takes an option linktext boolean argument for putting the alt text next to the icon like this. You can also trigger javascript actions using the component_action argument.');
-$url = new moodle_url('index.php');
+$url = new \core\url('index.php');
 $icon = new \core\output\pix_icon('t/add', 'Add');
 echo $OUTPUT->action_icon($url, $icon, null, null, true);
 

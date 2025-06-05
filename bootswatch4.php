@@ -28,7 +28,7 @@ require_once($CFG->libdir . '/adminlib.php');
 $PAGE->requires->js_call_amd('tool_themetester/bootswatch', 'init');
 
 $strheading = 'Theme Tester: Bootswatch 4 Examples page';
-$url = new moodle_url('/admin/tool/themetester/bootswatch.php');
+$url = new \core\url('/admin/tool/themetester/bootswatch.php');
 
 // Start setting up the page.
 $PAGE->set_context(context_system::instance());
@@ -39,7 +39,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>

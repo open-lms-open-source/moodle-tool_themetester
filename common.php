@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Common tags';
-$url = new moodle_url('/admin/tool/themetester/common.php');
+$url = new \core\url('/admin/tool/themetester/common.php');
 
 // Start setting up the page.
 $params = array();
@@ -38,7 +38,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -50,9 +50,9 @@ echo \core\output\html_writer::start_tag('p');
 // List of inline elements from http://htmlhelp.com/reference/html40/inline.html
 echo ' Lorum Ipsum ';
 $params = array('t' => time()); // to prevent the link being visited
-echo \core\output\html_writer::link(new moodle_url('index.php', $params), 'an unvisited text link');
+echo \core\output\html_writer::link(new \core\url('index.php', $params), 'an unvisited text link');
 echo ' Lorum Ipsum ';
-echo \core\output\html_writer::link(new moodle_url(qualified_me()), 'a visited text link');
+echo \core\output\html_writer::link(new \core\url(qualified_me()), 'a visited text link');
 echo ' Lorum Ipsum ';
 echo \core\output\html_writer::tag('strong', 'some strong text');
 echo ' Lorum Ipsum ';

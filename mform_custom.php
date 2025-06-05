@@ -36,7 +36,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 
 $strheading = 'Theme Tester: Moodle Forms: Custom Forms';
-$url = new moodle_url('/admin/tool/themetester/mform_custom.php');
+$url = new \core\url('/admin/tool/themetester/mform_custom.php');
 
 // Start setting up the page
 $params = array();
@@ -49,7 +49,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
+echo \core\output\html_writer::link(new \core\url('mform.php'), '&laquo; Back to moodle forms');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();

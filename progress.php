@@ -28,20 +28,20 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Progress Bars';
-$url = new moodle_url('/admin/tool/themetester/progress.php');
+$url = new \core\url('/admin/tool/themetester/progress.php');
 // Start setting up the page.
 $params = array();
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url($url);
 $PAGE->set_title($strheading);
 $PAGE->set_heading($strheading);
-$perpetualjs = new moodle_url('perpetual.js');
+$perpetualjs = new \core\url('perpetual.js');
 $PAGE->requires->js($perpetualjs);
 admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 
 echo $OUTPUT->heading($strheading);
 

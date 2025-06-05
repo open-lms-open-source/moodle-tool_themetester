@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Tab bars';
-$url = new moodle_url('/admin/tool/themetester/tabs.php');
+$url = new \core\url('/admin/tool/themetester/tabs.php');
 
 // Start setting up the page.
 $params = array();
@@ -39,7 +39,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -53,7 +53,7 @@ $activated = array();
 
 echo $OUTPUT->box('Standard, single row tab bar');
 
-$url = new moodle_url('index.php');
+$url = new \core\url('index.php');
 $row[] = new \core\output\tabobject('tab1',
 $url->out(),
 'Selected Tab',
@@ -101,7 +101,7 @@ print_tabs($tabs, $currenttab, $inactive, array('tab4', 'tab5'));
 echo $OUTPUT->box('You can set a flag on the tab object to keep the active tab as a link, though this doesn\'t affect additional selected tabs, just the current tab.');
 
 $row = array();
-$url = new moodle_url('index.php');
+$url = new \core\url('index.php');
 $row[] = new \core\output\tabobject('tab1',
     $url->out(),
     'Selected Tab',

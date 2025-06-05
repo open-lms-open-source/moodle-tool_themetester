@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = "Theme Tester: Bootstrap 4 alpha-4 CSS : Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework.";
-$url = new moodle_url('/admin/tool/themetester/bootstrap4alpha4.php');
+$url = new \core\url('/admin/tool/themetester/bootstrap4alpha4.php');
 
 // Start setting up the page.
 $params = array();
@@ -39,7 +39,7 @@ admin_externalpage_setup('toolthemetester');
 $PAGE->add_body_class('bd-home');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('/admin/tool/themetester/index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>

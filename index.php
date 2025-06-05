@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester';
-$url = new moodle_url('/admin/tool/themetester/index.php');
+$url = new \core\url('/admin/tool/themetester/index.php');
 
 // Start setting up the page
 $params = array();
@@ -72,7 +72,7 @@ $contents = array(
 
 echo \core\output\html_writer::start_tag('ul');
 foreach ($contents as $title => $file) {
-    $url = new moodle_url($file);
+    $url = new \core\url($file);
     $link = \core\output\html_writer::link($url, $title);
     echo \core\output\html_writer::tag('li', $link);
 }

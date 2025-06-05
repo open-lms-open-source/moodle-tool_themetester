@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Notifications';
-$url = new moodle_url('/admin/tool/themetester/notifications.php');
+$url = new \core\url('/admin/tool/themetester/notifications.php');
 
 $params = array();
 $PAGE->set_context(context_system::instance());
@@ -38,7 +38,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('/admin/tool/themetester/'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('/admin/tool/themetester/'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 

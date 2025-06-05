@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Bootstrap 3 Javascript';
-$url = new moodle_url('/admin/tool/themetester/bs_javascript.php');
+$url = new \core\url('/admin/tool/themetester/bs_javascript.php');
 
 // Start setting up the page.
 $params = array();
@@ -39,7 +39,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 ?>

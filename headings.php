@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Headings';
-$url = new moodle_url('/admin/tool/themetester/headings.php');
+$url = new \core\url('/admin/tool/themetester/headings.php');
 
 // Start setting up the page.
 $params = array();
@@ -38,7 +38,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();

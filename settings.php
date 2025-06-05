@@ -29,6 +29,6 @@ defined('MOODLE_INTERNAL') || die;
 $temp = new admin_externalpage(
     'toolthemetester',
     get_string('pluginname', 'tool_themetester'),
-    new moodle_url('/admin/tool/themetester/index.php')
+    new \core\url('/admin/tool/themetester/index.php')
 );
 $ADMIN->add('development', $temp);

@@ -26,7 +26,7 @@ require_once(dirname(__FILE__) . '/../../../config.php');
 require_once($CFG->libdir . '/adminlib.php');
 
 $strheading = 'Theme Tester: Forms';
-$url = new moodle_url('/admin/tool/themetester/forms.php');
+$url = new \core\url('/admin/tool/themetester/forms.php');
 
 // Start setting up the page.
 $params = array();
@@ -39,7 +39,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();
@@ -71,9 +71,9 @@ echo \core\output\html_writer::tag('p', 'To render a time selector - you can cho
 
 echo \core\output\html_writer::select_time('years', 'name5', time(), 5, $attr);
 
-echo \core\output\html_writer::tag('p', 'Generate a hidden input field for every parameter in a moodle_url object (output displayed below instead of rendered):');
+echo \core\output\html_writer::tag('p', 'Generate a hidden input field for every parameter in a \core\url object (output displayed below instead of rendered):');
 
-$url = new moodle_url('index.php', array('a' => 1, 'b' => 2, 'exclude' => 'this'));
+$url = new \core\url('index.php', array('a' => 1, 'b' => 2, 'exclude' => 'this'));
 echo \core\output\html_writer::tag('pre', htmlentities(\core\output\html_writer::input_hidden_params($url, array('exclude'))));
 
 echo \core\output\html_writer::tag('p', 'Generate a script tag (output displayed below instead of rendered):');
@@ -87,14 +87,14 @@ echo \core\output\html_writer::checkbox('name', 'value', false, null, array('id'
 
 echo \core\output\html_writer::tag('p', 'A confirm form with continue/cancel options (just providing urls to go to):');
 
-$continueurl = new moodle_url('index.php');
-$cancelurl = new moodle_url('index.php');
+$continueurl = new \core\url('index.php');
+$cancelurl = new \core\url('index.php');
 echo $OUTPUT->confirm('This is the message', $continueurl, $cancelurl);
 
 echo \core\output\html_writer::tag('p', 'A confirm form with continue/cancel options (with custom buttons):');
 
-$continueurl = new moodle_url('index.php');
-$cancelurl = new moodle_url('index.php');
+$continueurl = new \core\url('index.php');
+$cancelurl = new \core\url('index.php');
 $continuebutton = new \core\output\single_button($continueurl, 'Custom Button text', 'post');
 $cancelbutton = new \core\output\single_button($cancelurl, 'Something else', 'get');
 echo $OUTPUT->confirm('This is another message', $continuebutton, $cancelbutton);
@@ -114,7 +114,7 @@ echo $OUTPUT->render($button);
 
 echo \core\output\html_writer::tag('p', 'A single select form. Quick way using a function:');
 
-$url = new moodle_url('index.php', array('urlparams' => 'become', 'hidden' => 'fields'));
+$url = new \core\url('index.php', array('urlparams' => 'become', 'hidden' => 'fields'));
 $options = array(1 => 'one', 2 => 'two', 3 => 'three', 4 => 'four');
 echo $OUTPUT->single_select($url, 'youpicked', $options, '', array('' => 'choose'), 'formid');
 
@@ -148,7 +148,7 @@ echo $OUTPUT->file_picker($options);
  */
 
 echo \core\output\html_writer::tag('p', 'An "editing on/off" button. This automatically sends through the appropriate "edit" param and toggles the text.');
-$url = new moodle_url('forms.php', array('params' => 'to', 'send' => 'through'));
+$url = new \core\url('forms.php', array('params' => 'to', 'send' => 'through'));
 echo $OUTPUT->edit_button($url);
 
 echo \core\output\html_writer::tag('p', 'A "close window" button. To be used in a YUI popup dialog, not normally as part of a page. Automatically includes the close_window action:');
@@ -157,7 +157,7 @@ echo $OUTPUT->close_window_button('Close button text');
 
 echo \core\output\html_writer::tag('p', 'A "continue" button. You can specify the URL to go to when pressed:');
 
-$url = new moodle_url('index.php');
+$url = new \core\url('index.php');
 echo $OUTPUT->continue_button($url);
 
 echo \core\output\html_writer::tag('p', '');

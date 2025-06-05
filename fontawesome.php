@@ -28,7 +28,7 @@ require_once($CFG->dirroot.'/lib/formslib.php');
 
 
 $strheading = 'Theme Tester: Font Awesome';
-$url = new moodle_url('/admin/tool/themetester/fontawesome.php');
+$url = new \core\url('/admin/tool/themetester/fontawesome.php');
 $PAGE->requires->css('/admin/tool/themetester/fontawesome/assets/css/pygments.css');
 // Start setting up the page
 $params = array();
@@ -41,7 +41,7 @@ admin_externalpage_setup('toolthemetester');
 
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('index.php'), '&laquo; Back to index');
+echo \core\output\html_writer::link(new \core\url('index.php'), '&laquo; Back to index');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();

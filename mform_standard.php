@@ -27,7 +27,7 @@ require_once($CFG->libdir . '/adminlib.php');
 require_once($CFG->dirroot.'/lib/formslib.php');
 
 $strheading = 'Theme Tester: Moodle Forms: Standard elements';
-$url = new moodle_url('/admin/tool/themetester/mform_standard.php');
+$url = new \core\url('/admin/tool/themetester/mform_standard.php');
 
 // Start setting up the page
 $params = array();
@@ -39,7 +39,7 @@ $PAGE->set_heading($strheading);
 admin_externalpage_setup('toolthemetester');
 echo $OUTPUT->header();
 
-echo \core\output\html_writer::link(new moodle_url('mform.php'), '&laquo; Back to moodle forms');
+echo \core\output\html_writer::link(new \core\url('mform.php'), '&laquo; Back to moodle forms');
 echo $OUTPUT->heading($strheading);
 
 echo $OUTPUT->box_start();

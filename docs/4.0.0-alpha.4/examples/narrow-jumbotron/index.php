@@ -25,7 +25,7 @@
         <nav>
           <ul class="nav nav-pills pull-xs-right">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>

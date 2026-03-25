@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -386,7 +386,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Grid system</h1>
           <p class="bd-lead">Use our powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
           <h2 id="how-it-works">How it works</h2>
@@ -1074,7 +1074,7 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example-row">
 
 <div class="bd-example">
-<div class="row no-gutters">
+<div class="row g-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
   <div class="col-6 col-md-4">.col-6 .col-md-4</div>
 </div>
@@ -1306,14 +1306,14 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <div class="row">
   <div class="col-md-4">.col-md-4</div>
-  <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+  <div class="col-md-4 ms-auto">.col-md-4 .ml-auto</div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </div>
 <div class="row">
-  <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
-  <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+  <div class="col-md-3 ms-md-auto">.col-md-3 .ml-md-auto</div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+  <div class="col-md-3 ms-md-auto">.col-md-3 .ml-md-auto</div>
 </div>
 <div class="row">
-  <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+  <div class="col-auto me-auto">.col-auto .mr-auto</div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="col-auto">.col-auto</div>
 </div>
 </div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>

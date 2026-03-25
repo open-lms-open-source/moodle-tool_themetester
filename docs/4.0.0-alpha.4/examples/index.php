@@ -1,5 +1,5 @@
   <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <a id="skippy" class="visually-hidden visually-hidden-focusable" href="#content"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
       </div>

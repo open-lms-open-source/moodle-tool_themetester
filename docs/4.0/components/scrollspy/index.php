@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -379,7 +379,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Scrollspy</h1>
           <p class="bd-lead">Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p>
           <h2 id="how-it-works">How it works</h2>
@@ -482,14 +482,14 @@ echo $OUTPUT->heading($strheading);
         <nav class="nav nav-pills flex-column">
           <a class="nav-link" href="#item-1">Item 1</a>
           <nav class="nav nav-pills flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
+            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
           </nav>
           <a class="nav-link" href="#item-2">Item 2</a>
           <a class="nav-link" href="#item-3">Item 3</a>
           <nav class="nav nav-pills flex-column">
-            <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-            <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
+            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
           </nav>
         </nav>
       </nav>

@@ -23,7 +23,7 @@
       <a href="#" class="navbar-brand">Carousel</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -81,11 +81,11 @@
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </div><!-- /.carousel -->
 

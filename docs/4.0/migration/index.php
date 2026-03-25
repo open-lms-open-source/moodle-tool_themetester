@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -393,7 +393,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Migrating to v4</h1>
           <p class="bd-lead">Bootstrap 4 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.</p>
           <h2 id="stable-changes">Stable changes</h2>
@@ -430,7 +430,7 @@ echo $OUTPUT->heading($strheading);
   <li>
     <p>Rewrote both custom and default checkboxes and radios. Now, both have matching HTML structure (outer <code class="highlighter-rouge">&lt;div&gt;</code> with sibling <code class="highlighter-rouge">&lt;input&gt;</code> and <code class="highlighter-rouge">&lt;label&gt;</code>) and the same layout styles (stacked default, inline with modifier class). This allows us to style the label based on the input’s state, simplifying support for the <code class="highlighter-rouge">disabled</code> attribute (previously requiring a parent class) and better supporting our form validation.</p>
 
-    <p>As part of this, we’ve changed the CSS for managing multiple <code class="highlighter-rouge">background-image</code>s on custom form checkboxes and radios. Previously, the now removed <code class="highlighter-rouge">.custom-control-indicator</code> element had the background color, gradient, and SVG icon. Customizing the background gradient meant replacing all of those every time you needed to change just one. Now, we have <code class="highlighter-rouge">.custom-control-label::before</code> for the fill and gradient and <code class="highlighter-rouge">.custom-control-label::after</code> handles the icon.</p>
+    <p>As part of this, we’ve changed the CSS for managing multiple <code class="highlighter-rouge">background-image</code>s on custom form checkboxes and radios. Previously, the now removed <code class="highlighter-rouge">.custom-control-indicator</code> element had the background color, gradient, and SVG icon. Customizing the background gradient meant replacing all of those every time you needed to change just one. Now, we have <code class="highlighter-rouge">.form-check-label::before</code> for the fill and gradient and <code class="highlighter-rouge">.form-check-label::after</code> handles the icon.</p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
     <p>To make a custom check inline, add <code class="highlighter-rouge">.custom-control-inline</code>.</p>
   </li>
@@ -605,7 +605,7 @@ echo $OUTPUT->heading($strheading);
   <li>Horizontal forms overhauled:
     <ul>
       <li>Dropped the <code class="highlighter-rouge">.form-horizontal</code> class requirement.</li>
-      <li><code class="highlighter-rouge">.form-group</code> no longer applies styles from the <code class="highlighter-rouge">.row</code> via mixin, so <code class="highlighter-rouge">.row</code> is now required for horizontal grid layouts (e.g., <code class="highlighter-rouge">&lt;div class="form-group row"&gt;</code>).</li>
+      <li><code class="highlighter-rouge">.form-group</code> no longer applies styles from the <code class="highlighter-rouge">.row</code> via mixin, so <code class="highlighter-rouge">.row</code> is now required for horizontal grid layouts (e.g., <code class="highlighter-rouge">&lt;div class="mb-3 row"&gt;</code>).</li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <li>Added new <code class="highlighter-rouge">.col-form-label</code> class to vertically center labels with <code class="highlighter-rouge">.form-control</code>s.</li>
       <li>Added new <code class="highlighter-rouge">.form-row</code> for compact form layouts with the grid classes (swap your <code class="highlighter-rouge">.row</code> for a <code class="highlighter-rouge">.form-row</code> and go).</li>
     </ul>
@@ -716,9 +716,9 @@ echo $OUTPUT->heading($strheading);
 
 <ul>
   <li>Renamed <code class="highlighter-rouge">.label</code> to <code class="highlighter-rouge">.badge</code> to disambiguate from the <code class="highlighter-rouge">&lt;label&gt;</code> element.</li>
-  <li>Dropped the <code class="highlighter-rouge">.badge</code> component as it was nearly identical to labels. Use the <code class="highlighter-rouge">.badge-pill</code> modifier together with the label component instead for that rounded look.</li>
+  <li>Dropped the <code class="highlighter-rouge">.badge</code> component as it was nearly identical to labels. Use the <code class="highlighter-rouge">.rounded-pill</code> modifier together with the label component instead for that rounded look.</li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <li>Badges are no longer floated automatically in list groups and other components. Utility classes are now required for that.</li>
-  <li><code class="highlighter-rouge">.badge-default</code> has been dropped and <code class="highlighter-rouge">.badge-secondary</code> added to match component modifier classes used elsewhere.</li>
+  <li><code class="highlighter-rouge">.badge-default</code> has been dropped and <code class="highlighter-rouge">.text-bg-secondary</code> added to match component modifier classes used elsewhere.</li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </ul>
 
 <h3 id="panels-thumbnails-and-wells">Panels, thumbnails, and wells</h3>
@@ -775,7 +775,7 @@ echo $OUTPUT->heading($strheading);
     <ul>
       <li>Made display utilities responsive (e.g., <code class="highlighter-rouge">.d-none</code> and <code class="highlighter-rouge">d-{sm,md,lg,xl}-none</code>).</li>
       <li>Dropped the bulk of <code class="highlighter-rouge">.hidden-*</code> utilities for new <a href="<?php echo $CFG->wwwroot ?>/admin/tool/themetester/docs/4.0/utilities/display/">display utilities</a>. For example, instead of <code class="highlighter-rouge">.hidden-sm-up</code>, use <code class="highlighter-rouge">.d-sm-none</code>. Renamed the <code class="highlighter-rouge">.hidden-print</code> utilities to use the display utility naming scheme. <a href="#responsive-utilities">More info under the Responsive utilities section of this page.</a></li>
-      <li>Added <code class="highlighter-rouge">.float-{sm,md,lg,xl}-{left,right,none}</code> classes for responsive floats and removed <code class="highlighter-rouge">.pull-left</code> and <code class="highlighter-rouge">.pull-right</code> since they’re redundant to <code class="highlighter-rouge">.float-left</code> and <code class="highlighter-rouge">.float-right</code>.</li>
+      <li>Added <code class="highlighter-rouge">.float-{sm,md,lg,xl}-{left,right,none}</code> classes for responsive floats and removed <code class="highlighter-rouge">.pull-left</code> and <code class="highlighter-rouge">.pull-right</code> since they’re redundant to <code class="highlighter-rouge">.float-start</code> and <code class="highlighter-rouge">.float-end</code>.</li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     </ul>
   </li>
   <li><strong>Type:</strong>

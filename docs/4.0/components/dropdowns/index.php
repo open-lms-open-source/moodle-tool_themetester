@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -376,7 +376,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Dropdowns</h1>
           <p class="bd-lead">Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.</p>
           <h2 id="overview">Overview</h2>
@@ -542,7 +542,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -555,7 +555,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -568,7 +568,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-success">Success</button>
     <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -581,7 +581,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -594,7 +594,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -607,7 +607,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-danger">Danger</button>
     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -652,10 +652,10 @@ echo $OUTPUT->heading($strheading);
         <a class="dropdown-item" href="#">Separated link</a>
       </div>
     </div><!-- /btn-group -->
-    <div class="btn-group ml-2">
+    <div class="btn-group ms-2"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
       <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Action</a>
@@ -679,10 +679,10 @@ echo $OUTPUT->heading($strheading);
         <a class="dropdown-item" href="#">Separated link</a>
       </div>
     </div><!-- /btn-group -->
-    <div class="btn-group ml-2">
+    <div class="btn-group ms-2"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
       <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Action</a>
@@ -763,7 +763,7 @@ echo $OUTPUT->heading($strheading);
       Split dropup
     </button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -821,7 +821,7 @@ echo $OUTPUT->heading($strheading);
       Split dropright
     </button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdright</span>
+      <span class="visually-hidden">Toggle Dropdright</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -877,7 +877,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <div class="btn-group dropleft" role="group">
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="sr-only">Toggle Dropleft</span>
+        <span class="visually-hidden">Toggle Dropleft</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Action</a>
@@ -1097,11 +1097,11 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <div class="dropdown-menu">
   <form class="px-4 py-3">
-    <div class="form-group">
+    <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="exampleDropdownFormEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" />
     </div>
-    <div class="form-group">
+    <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="exampleDropdownFormPassword1">Password</label>
       <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" />
     </div>
@@ -1120,11 +1120,11 @@ echo $OUTPUT->heading($strheading);
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"px-4 py-3"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleDropdownFormEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleDropdownFormEmail1"</span> <span class="na">placeholder=</span><span class="s">"email@example.com"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleDropdownFormPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleDropdownFormPassword1"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -1143,11 +1143,11 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <form class="dropdown-menu p-4">
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleDropdownFormEmail2">Email address</label>
     <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com" />
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleDropdownFormPassword2">Password</label>
     <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password" />
   </div>
@@ -1161,11 +1161,11 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"dropdown-menu p-4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleDropdownFormEmail2"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleDropdownFormEmail2"</span> <span class="na">placeholder=</span><span class="s">"email@example.com"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleDropdownFormPassword2"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleDropdownFormPassword2"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1184,7 +1184,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="d-flex">
-  <div class="dropdown mr-1">
+  <div class="dropdown me-1"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
       Offset
     </button>
@@ -1197,7 +1197,7 @@ echo $OUTPUT->heading($strheading);
   <div class="btn-group">
     <button type="button" class="btn btn-secondary">Reference</button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
       <a class="dropdown-item" href="#">Action</a>

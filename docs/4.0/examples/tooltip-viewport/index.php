@@ -18,7 +18,7 @@
 
   <body>
 
-    <button type="button" class="btn btn-secondary float-right tooltip-bottom" title="This should be shifted to the left">Shift Left</button>
+    <button type="button" class="btn btn-secondary float-end tooltip-bottom" title="This should be shifted to the left">Shift Left</button> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <button type="button" class="btn btn-secondary tooltip-bottom" title="This should be shifted to the right">Shift Right</button>
     <button type="button" class="btn btn-secondary tooltip-right" title="This should be shifted down">Shift Down</button>
 
@@ -28,7 +28,7 @@
       <button type="button" class="btn btn-secondary tooltip-viewport-bottom" title="This should be shifted to the left">Shift Left</button>
       <button type="button" class="btn btn-secondary tooltip-viewport-right" title="This should be shifted down">Shift Down</button>
 
-      <button type="button" class="btn btn-secondary float-right tooltip-viewport-bottom" title="This should be shifted to the right">Shift Right</button>
+      <button type="button" class="btn btn-secondary float-end tooltip-viewport-bottom" title="This should be shifted to the right">Shift Right</button> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
       <button type="button" class="btn btn-secondary tooltip-viewport-right btn-bottom" title="This should be shifted up">Shift Up</button>
     </div>

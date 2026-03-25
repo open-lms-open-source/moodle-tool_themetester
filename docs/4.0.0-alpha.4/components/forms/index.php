@@ -901,16 +901,16 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example" data-example-id="">
 <form>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleSelect1">Example select</label>
     <select class="form-control" id="exampleSelect1">
       <option>1</option>
@@ -920,7 +920,7 @@ echo $OUTPUT->heading($strheading);
       <option>5</option>
     </select>
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleSelect2">Example multiple select</label>
     <select multiple="" class="form-control" id="exampleSelect2">
       <option>1</option>
@@ -930,16 +930,16 @@ echo $OUTPUT->heading($strheading);
       <option>5</option>
     </select>
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleTextarea">Example textarea</label>
     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleInputFile">File input</label>
     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" />
     <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
   </div>
-  <fieldset class="form-group">
+  <fieldset class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <legend>Radio buttons</legend>
     <div class="form-check">
       <label class="form-check-label">
@@ -970,16 +970,16 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span> <span class="na">aria-describedby=</span><span class="s">"emailHelp"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"emailHelp"</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>We'll never share your email with anyone else.<span class="nt">&lt;/small&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleSelect1"</span><span class="nt">&gt;</span>Example select<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleSelect1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
@@ -989,7 +989,7 @@ echo $OUTPUT->heading($strheading);
       <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;/select&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleSelect2"</span><span class="nt">&gt;</span>Example multiple select<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;select</span> <span class="na">multiple</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleSelect2"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;option&gt;</span>1<span class="nt">&lt;/option&gt;</span>
@@ -999,16 +999,16 @@ echo $OUTPUT->heading($strheading);
       <span class="nt">&lt;option&gt;</span>5<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;/select&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleTextarea"</span><span class="nt">&gt;</span>Example textarea<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleTextarea"</span> <span class="na">rows=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputFile"</span><span class="nt">&gt;</span>File input<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">class=</span><span class="s">"form-control-file"</span> <span class="na">id=</span><span class="s">"exampleInputFile"</span> <span class="na">aria-describedby=</span><span class="s">"fileHelp"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"fileHelp"</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.<span class="nt">&lt;/small&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;legend&gt;</span>Radio buttons<span class="nt">&lt;/legend&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span><span class="nt">&gt;</span>
@@ -1051,7 +1051,7 @@ echo $OUTPUT->heading($strheading);
   <tbody>
     <tr>
       <td>
-        <p><code class="highlighter-rouge">.form-group</code></p>
+        <p><code class="highlighter-rouge">.mb-3</code></p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 
       </td>
       <td class="text-nowrap">
@@ -1127,158 +1127,158 @@ echo $OUTPUT->heading($strheading);
 <p>Here are examples of <code class="highlighter-rouge">.form-control</code> applied to each textual HTML5 <code class="highlighter-rouge">&lt;input&gt;</code> <code class="highlighter-rouge">type</code>.</p>
 
 <div class="bd-example" data-example-id="">
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-text-input" class="col-xs-2 col-form-label">Text</label>
   <div class="col-xs-10">
     <input class="form-control" type="text" value="Artisanal kale" id="example-text-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-search-input" class="col-xs-2 col-form-label">Search</label>
   <div class="col-xs-10">
     <input class="form-control" type="search" value="How do I shoot web" id="example-search-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
   <div class="col-xs-10">
     <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-url-input" class="col-xs-2 col-form-label">URL</label>
   <div class="col-xs-10">
     <input class="form-control" type="url" value="http://getbootstrap.com" id="example-url-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-tel-input" class="col-xs-2 col-form-label">Telephone</label>
   <div class="col-xs-10">
     <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-password-input" class="col-xs-2 col-form-label">Password</label>
   <div class="col-xs-10">
     <input class="form-control" type="password" value="hunter2" id="example-password-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-number-input" class="col-xs-2 col-form-label">Number</label>
   <div class="col-xs-10">
     <input class="form-control" type="number" value="42" id="example-number-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-datetime-local-input" class="col-xs-2 col-form-label">Date and time</label>
   <div class="col-xs-10">
     <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-date-input" class="col-xs-2 col-form-label">Date</label>
   <div class="col-xs-10">
     <input class="form-control" type="date" value="2011-08-19" id="example-date-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-month-input" class="col-xs-2 col-form-label">Month</label>
   <div class="col-xs-10">
     <input class="form-control" type="month" value="2011-08" id="example-month-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-week-input" class="col-xs-2 col-form-label">Week</label>
   <div class="col-xs-10">
     <input class="form-control" type="week" value="2011-W33" id="example-week-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-time-input" class="col-xs-2 col-form-label">Time</label>
   <div class="col-xs-10">
     <input class="form-control" type="time" value="13:45:00" id="example-time-input" />
   </div>
 </div>
-<div class="form-group row">
+<div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label for="example-color-input" class="col-xs-2 col-form-label">Color</label>
   <div class="col-xs-10">
     <input class="form-control" type="color" value="#563d7c" id="example-color-input" />
   </div>
 </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-text-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">"Artisanal kale"</span> <span class="na">id=</span><span class="s">"example-text-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-search-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">value=</span><span class="s">"How do I shoot web"</span> <span class="na">id=</span><span class="s">"example-search-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-email-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">"bootstrap@example.com"</span> <span class="na">id=</span><span class="s">"example-email-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-url-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>URL<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"url"</span> <span class="na">value=</span><span class="s">"http://getbootstrap.com"</span> <span class="na">id=</span><span class="s">"example-url-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-tel-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Telephone<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">value=</span><span class="s">"1-(555)-555-5555"</span> <span class="na">id=</span><span class="s">"example-tel-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-password-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">value=</span><span class="s">"hunter2"</span> <span class="na">id=</span><span class="s">"example-password-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-number-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Number<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">value=</span><span class="s">"42"</span> <span class="na">id=</span><span class="s">"example-number-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-datetime-local-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Date and time<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"datetime-local"</span> <span class="na">value=</span><span class="s">"2011-08-19T13:45:00"</span> <span class="na">id=</span><span class="s">"example-datetime-local-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-date-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Date<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"date"</span> <span class="na">value=</span><span class="s">"2011-08-19"</span> <span class="na">id=</span><span class="s">"example-date-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-month-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Month<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"month"</span> <span class="na">value=</span><span class="s">"2011-08"</span> <span class="na">id=</span><span class="s">"example-month-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-week-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Week<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"week"</span> <span class="na">value=</span><span class="s">"2011-W33"</span> <span class="na">id=</span><span class="s">"example-week-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-time-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Time<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"time"</span> <span class="na">value=</span><span class="s">"13:45:00"</span> <span class="na">id=</span><span class="s">"example-time-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"example-color-input"</span> <span class="na">class=</span><span class="s">"col-xs-2 col-form-label"</span><span class="nt">&gt;</span>Color<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-10"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">type=</span><span class="s">"color"</span> <span class="na">value=</span><span class="s">"#563d7c"</span> <span class="na">id=</span><span class="s">"example-color-input"</span><span class="nt">&gt;</span>
@@ -1291,26 +1291,26 @@ echo $OUTPUT->heading($strheading);
 
 <h3 id="form-groups">Form groups</h3>
 
-<p>The <code class="highlighter-rouge">.form-group</code> class is the easiest way to add some structure to forms. Its only purpose is to provide <code class="highlighter-rouge">margin-bottom</code> around a label and control pairing. As a bonus, since it’s a class you can use it with <code class="highlighter-rouge">&lt;fieldset&gt;</code>s, <code class="highlighter-rouge">&lt;div&gt;</code>s, or nearly any other element.</p>
+<p>The <code class="highlighter-rouge">.mb-3</code> class is the easiest way to add some structure to forms. Its only purpose is to provide <code class="highlighter-rouge">margin-bottom</code> around a label and control pairing. As a bonus, since it’s a class you can use it with <code class="highlighter-rouge">&lt;fieldset&gt;</code>s, <code class="highlighter-rouge">&lt;div&gt;</code>s, or nearly any other element.</p>  <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 
 <div class="bd-example" data-example-id="">
 <form>
-  <div class="form-group">
+  <div class="mb-3">  <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="formGroupExampleInput">Example label</label>
     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" />
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="formGroupExampleInput2">Another label</label>
     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input" />
   </div>
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"formGroupExampleInput"</span><span class="nt">&gt;</span>Example label<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"formGroupExampleInput"</span> <span class="na">placeholder=</span><span class="s">"Example input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"formGroupExampleInput2"</span><span class="nt">&gt;</span>Another label<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"formGroupExampleInput2"</span> <span class="na">placeholder=</span><span class="s">"Another input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1331,12 +1331,12 @@ echo $OUTPUT->heading($strheading);
 <h4 id="visible-labels">Visible labels</h4>
 
 <div class="bd-example" data-example-id="">
-<form class="form-inline">
-  <div class="form-group">
+<form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <div class="mb-3">
     <label for="exampleInputName2">Name</label>
     <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" />
   </div>
-  <div class="form-group">
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="exampleInputEmail2">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com" />
   </div>
@@ -1344,11 +1344,11 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputName2"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputName2"</span> <span class="na">placeholder=</span><span class="s">"Jane Doe"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"jane.doe@example.com"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1358,13 +1358,13 @@ echo $OUTPUT->heading($strheading);
 <h4 id="hidden-labels">Hidden labels</h4>
 
 <div class="bd-example" data-example-id="">
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+<form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <div class="mb-3">
+    <label class="visually-hidden" for="exampleInputEmail3">Email address</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email" />
   </div>
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputPassword3">Password</label>
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
+    <label class="visually-hidden" for="exampleInputPassword3">Password</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password" />
   </div>
   <div class="form-check">
@@ -1376,11 +1376,11 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputEmail3"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputPassword3"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword3"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1393,9 +1393,9 @@ echo $OUTPUT->heading($strheading);
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <div class="bd-example" data-example-id="">
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+<form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <div class="mb-3">
+    <label class="visually-hidden" for="exampleInputAmount">Amount (in dollars)</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <div class="input-group">
       <div class="input-group-addon">$</div>
       <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount" />
@@ -1406,7 +1406,7 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputAmount"</span><span class="nt">&gt;</span>Amount (in dollars)<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/div&gt;</span>
@@ -1431,19 +1431,19 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example" data-example-id="">
 <div class="container">
   <form>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
       </div>
     </div>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
       <div class="col-sm-10">
         <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
       </div>
     </div>
-    <fieldset class="form-group row">
+    <fieldset class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <legend class="col-form-legend col-sm-2">Radios</legend>
       <div class="col-sm-10">
         <div class="form-check">
@@ -1466,7 +1466,7 @@ echo $OUTPUT->heading($strheading);
         </div>
       </div>
     </fieldset>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label class="col-sm-2">Checkbox</label>
       <div class="col-sm-10">
         <div class="form-check">
@@ -1476,7 +1476,7 @@ echo $OUTPUT->heading($strheading);
         </div>
       </div>
     </div>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <div class="offset-sm-2 col-sm-10">
         <button type="submit" class="btn btn-primary">Sign in</button>
       </div>
@@ -1486,19 +1486,19 @@ echo $OUTPUT->heading($strheading);
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;form&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail3"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputEmail3"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword3"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword3"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;legend</span> <span class="na">class=</span><span class="s">"col-form-legend col-sm-2"</span><span class="nt">&gt;</span>Radios<span class="nt">&lt;/legend&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
@@ -1521,7 +1521,7 @@ echo $OUTPUT->heading($strheading);
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/fieldset&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2"</span><span class="nt">&gt;</span>Checkbox<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check"</span><span class="nt">&gt;</span>
@@ -1531,7 +1531,7 @@ echo $OUTPUT->heading($strheading);
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"offset-sm-2 col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Sign in<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -1544,13 +1544,13 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example" data-example-id="">
 <div class="container">
   <form>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
       <div class="col-sm-10">
         <input type="email" class="form-control form-control-lg" id="lgFormGroupInput" placeholder="you@example.com" />
       </div>
     </div>
-    <div class="form-group row">
+    <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="smFormGroupInput" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
       <div class="col-sm-10">
         <input type="email" class="form-control form-control-sm" id="smFormGroupInput" placeholder="you@example.com" />
@@ -1561,13 +1561,13 @@ echo $OUTPUT->heading($strheading);
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;form&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"lgFormGroupInput"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label col-form-label-lg"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-lg"</span> <span class="na">id=</span><span class="s">"lgFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"you@example.com"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"smFormGroupInput"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label col-form-label-sm"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control form-control-sm"</span> <span class="na">id=</span><span class="s">"smFormGroupInput"</span> <span class="na">placeholder=</span><span class="s">"you@example.com"</span><span class="nt">&gt;</span>
@@ -1731,13 +1731,13 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example" data-example-id="">
 <form>
-  <div class="form-group row">
+  <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
       <p class="form-control-static">email@example.com</p>
     </div>
   </div>
-  <div class="form-group row">
+  <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
       <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
@@ -1746,13 +1746,13 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 row"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword"</span> <span class="na">class=</span><span class="s">"col-sm-2 col-form-label"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-10"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
@@ -1761,24 +1761,24 @@ echo $OUTPUT->heading($strheading);
 <span class="nt">&lt;/form&gt;</span></code></pre></div>
 
 <div class="bd-example" data-example-id="">
-<form class="form-inline">
-  <div class="form-group">
-    <label class="sr-only">Email</label>
+<form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <div class="mb-3">
+    <label class="visually-hidden">Email</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <p class="form-control-static">email@example.com</p>
   </div>
-  <div class="form-group">
-    <label for="inputPassword2" class="sr-only">Password</label>
+  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
+    <label for="inputPassword2" class="visually-hidden">Password</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />
   </div>
   <button type="submit" class="btn btn-primary">Confirm identity</button>
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"form-control-static"</span><span class="nt">&gt;</span>email@example.com<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword2"</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputPassword2"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
@@ -1796,11 +1796,11 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example" data-example-id="">
 <form>
   <fieldset disabled="">
-    <div class="form-group">
+    <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="disabledTextInput">Disabled input</label>
       <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" />
     </div>
-    <div class="form-group">
+    <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <label for="disabledSelect">Disabled select menu</label>
       <select id="disabledSelect" class="form-control">
         <option>Disabled select</option>
@@ -1817,11 +1817,11 @@ echo $OUTPUT->heading($strheading);
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form&gt;</span>
   <span class="nt">&lt;fieldset</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledTextInput"</span><span class="nt">&gt;</span>Disabled input<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"disabledTextInput"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Disabled input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"disabledSelect"</span><span class="nt">&gt;</span>Disabled select menu<span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"disabledSelect"</span> <span class="na">class=</span><span class="s">"form-control"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;option&gt;</span>Disabled select<span class="nt">&lt;/option&gt;</span>
@@ -1952,8 +1952,8 @@ echo $OUTPUT->heading($strheading);
 <p>Inline text can use any typical inline HTML element (be it a <code class="highlighter-rouge">&lt;small&gt;</code>, <code class="highlighter-rouge">&lt;span&gt;</code>, or something else).</p>
 
 <div class="bd-example" data-example-id="">
-<form class="form-inline">
-  <div class="form-group">
+<form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <div class="mb-3">
     <label for="inputPassword4">Password</label>
     <input type="password" id="inputPassword4" class="form-control" aria-describedby="passwordHelpInline" />
     <small id="passwordHelpInline" class="text-muted">
@@ -1963,7 +1963,7 @@ echo $OUTPUT->heading($strheading);
 </form>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPassword4"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">id=</span><span class="s">"inputPassword4"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-describedby=</span><span class="s">"passwordHelpInline"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"passwordHelpInline"</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
@@ -1995,38 +1995,38 @@ echo $OUTPUT->heading($strheading);
 <p>Here are some examples of the aforementioned classes in action.</p>
 
 <div class="bd-example" data-example-id="">
-<div class="form-group has-success">
+<div class="mb-3 has-success"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label class="col-form-label" for="inputSuccess1">Input with success</label>
   <input type="text" class="form-control form-control-success" id="inputSuccess1" />
   <div class="form-control-feedback">Success! You've done it.</div>
   <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
-<div class="form-group has-warning">
+<div class="mb-3 has-warning"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label class="col-form-label" for="inputWarning1">Input with warning</label>
   <input type="text" class="form-control form-control-warning" id="inputWarning1" />
   <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
   <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
-<div class="form-group has-danger">
+<div class="mb-3 has-danger"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <label class="col-form-label" for="inputDanger1">Input with danger</label>
   <input type="text" class="form-control form-control-danger" id="inputDanger1" />
   <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
   <small class="form-text text-muted">Example help text that remains unchanged.</small>
 </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-success"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-form-label"</span> <span class="na">for=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>Input with success<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-success"</span> <span class="na">id=</span><span class="s">"inputSuccess1"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-control-feedback"</span><span class="nt">&gt;</span>Success! You've done it.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>Example help text that remains unchanged.<span class="nt">&lt;/small&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-warning"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-form-label"</span> <span class="na">for=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>Input with warning<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-warning"</span> <span class="na">id=</span><span class="s">"inputWarning1"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-control-feedback"</span><span class="nt">&gt;</span>Shucks, check the formatting of that and try again.<span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>Example help text that remains unchanged.<span class="nt">&lt;/small&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-danger"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-danger"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"col-form-label"</span> <span class="na">for=</span><span class="s">"inputDanger1"</span><span class="nt">&gt;</span>Input with danger<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control form-control-danger"</span> <span class="na">id=</span><span class="s">"inputDanger1"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-control-feedback"</span><span class="nt">&gt;</span>Sorry, that username's taken. Try another?<span class="nt">&lt;/div&gt;</span>
@@ -2095,14 +2095,14 @@ echo $OUTPUT->heading($strheading);
 <h4 id="checkboxes">Checkboxes</h4>
 
 <div class="bd-example" data-example-id="">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" />
+<label class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <input type="checkbox" class="form-check-input" />
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Check this custom checkbox</span>
 </label>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-checkbox"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Check this custom checkbox<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
@@ -2110,8 +2110,8 @@ echo $OUTPUT->heading($strheading);
 <p>Custom checkboxes can also utilize the <code class="highlighter-rouge">:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
 
 <div class="bd-example bd-example-indeterminate">
-  <label class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" />
+  <label class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+    <input type="checkbox" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Check this custom checkbox</span>
   </label>
@@ -2124,24 +2124,24 @@ echo $OUTPUT->heading($strheading);
 <h4 id="radios">Radios</h4>
 
 <div class="bd-example" data-example-id="">
-<label class="custom-control custom-radio">
-  <input id="radio1" name="radio" type="radio" class="custom-control-input" />
+<label class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <input id="radio1" name="radio" type="radio" class="form-check-input" />
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Toggle this custom radio</span>
 </label>
-<label class="custom-control custom-radio">
-  <input id="radio2" name="radio" type="radio" class="custom-control-input" />
+<label class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <input id="radio2" name="radio" type="radio" class="form-check-input" />
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Or toggle this other custom radio</span>
 </label>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-radio"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio1"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-radio"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio1"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Toggle this custom radio<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-radio"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio2"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-radio"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio2"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Or toggle this other custom radio<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
@@ -2151,26 +2151,26 @@ echo $OUTPUT->heading($strheading);
 <p>Custom checkboxes and radios can also be disabled. Add the <code class="highlighter-rouge">disabled</code> boolean attribute to the <code class="highlighter-rouge">&lt;input&gt;</code> and the custom indicator and label description will be automatically styled.</p>
 
 <div class="bd-example" data-example-id="">
-<label class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" disabled="" />
+<label class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <input type="checkbox" class="form-check-input" disabled="" />
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Check this custom checkbox</span>
 </label>
 
-<label class="custom-control custom-radio">
-  <input id="radio3" name="radioDisabled" type="radio" class="custom-control-input" disabled="" />
+<label class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <input id="radio3" name="radioDisabled" type="radio" class="form-check-input" disabled="" />
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">Toggle this custom radio</span>
 </label>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-checkbox"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Check this custom checkbox<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span>
 
-<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-radio"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio3"</span> <span class="na">name=</span><span class="s">"radioDisabled"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-radio"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio3"</span> <span class="na">name=</span><span class="s">"radioDisabled"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Toggle this custom radio<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/label&gt;</span></code></pre></div>
@@ -2180,45 +2180,45 @@ echo $OUTPUT->heading($strheading);
 <p>Add other states to your custom forms with our validation classes.</p>
 
 <div class="bd-example" data-example-id="">
-<div class="form-group has-success">
-  <label class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" />
+<div class="mb-3 has-success"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <label class="form-check custom-checkbox">
+    <input type="checkbox" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Check this custom checkbox</span>
   </label>
 </div>
-<div class="form-group has-warning">
-  <label class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" />
+<div class="mb-3 has-warning"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <label class="form-check custom-checkbox">
+    <input type="checkbox" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Check this custom checkbox</span>
   </label>
 </div>
-<div class="form-group has-danger m-b-0">
-  <label class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" />
+<div class="mb-3 has-danger m-b-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <label class="form-check custom-checkbox">
+    <input type="checkbox" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Check this custom checkbox</span>
   </label>
 </div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-success"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-success"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Check this custom checkbox<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-warning"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-warning"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Check this custom checkbox<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group has-danger m-b-0"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-checkbox"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3 has-danger m-b-0"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines -->
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Check this custom checkbox<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
@@ -2230,26 +2230,26 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example" data-example-id="">
 <div class="custom-controls-stacked">
-  <label class="custom-control custom-radio">
-    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input" />
+  <label class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+    <input id="radioStacked1" name="radio-stacked" type="radio" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Toggle this custom radio</span>
   </label>
-  <label class="custom-control custom-radio">
-    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input" />
+  <label class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+    <input id="radioStacked2" name="radio-stacked" type="radio" class="form-check-input" />
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Or toggle this other custom radio</span>
   </label>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"custom-controls-stacked"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-radio"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radioStacked1"</span> <span class="na">name=</span><span class="s">"radio-stacked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-radio"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radioStacked1"</span> <span class="na">name=</span><span class="s">"radio-stacked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Toggle this custom radio<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"custom-control custom-radio"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radioStacked2"</span> <span class="na">name=</span><span class="s">"radio-stacked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"custom-control-input"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check custom-radio"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radioStacked2"</span> <span class="na">name=</span><span class="s">"radio-stacked"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"form-check-input"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-indicator"</span><span class="nt">&gt;&lt;/span&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"custom-control-description"</span><span class="nt">&gt;</span>Or toggle this other custom radio<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/label&gt;</span>
@@ -2257,17 +2257,17 @@ echo $OUTPUT->heading($strheading);
 
 <h3 id="select-menu">Select menu</h3>
 
-<p>Custom <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class, <code class="highlighter-rouge">.custom-select</code> to trigger the custom styles.</p>
+<p>Custom <code class="highlighter-rouge">&lt;select&gt;</code> menus need only a custom class, <code class="highlighter-rouge">.form-select</code> to trigger the custom styles.</p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 
 <div class="bd-example" data-example-id="">
-<select class="custom-select">
+<select class="form-select"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <option selected="">Open this select menu</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"custom-select"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-select"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
   <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Open this select menu<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
   <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>

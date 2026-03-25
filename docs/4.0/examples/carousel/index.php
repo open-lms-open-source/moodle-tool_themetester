@@ -24,9 +24,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -35,8 +35,8 @@
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <form class="d-flex flex-wrap align-items-center mt-2 mt-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+            <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
@@ -55,7 +55,7 @@
           <div class="carousel-item active">
             <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
+              <div class="carousel-caption text-start"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 <h1>Example headline.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
@@ -75,7 +75,7 @@
           <div class="carousel-item">
             <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
             <div class="container">
-              <div class="carousel-caption text-right">
+              <div class="carousel-caption text-end"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 <h1>One more for good measure.</h1>
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -85,11 +85,11 @@
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </a>
         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </a>
       </div>
 
@@ -170,7 +170,7 @@
 
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="float-end"><a href="#">Back to top</a></p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
     </main>

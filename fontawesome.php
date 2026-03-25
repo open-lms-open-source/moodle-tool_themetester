@@ -82,7 +82,7 @@ echo $OUTPUT->container_start();
     <div class="col-md-3 col-sm-4">
       <p>
         <i class="fa fa-camera-retro"></i>
-        <span class="sr-only">Example: basic icon</span>
+        <span class="visually-hidden">Example: basic icon</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         fa-camera-retro
       </p>
     </div>
@@ -98,7 +98,7 @@ echo $OUTPUT->container_start();
         <ul class="fa-ul">
           <li>
             <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
-            <strong class="sr-only">Example: basic icon</strong>
+            <strong class="visually-hidden">Example: basic icon</strong> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             If you change the font-size of the icon's container, the icon gets bigger. Same things goes for color,
             drop shadow, and anything else that gets inherited using CSS.
           </li>
@@ -253,19 +253,19 @@ current, borne back ceaselessly into the past.
     <div class="col-md-3 col-sm-4">
       <p>
         <i class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading example (with fa-spinner icon)</span>
+        <span class="visually-hidden">Loading example (with fa-spinner icon)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
         <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading (with fa-circle-o-notch icon)</span>
+        <span class="visually-hidden">Loading (with fa-circle-o-notch icon)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
         <i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading example (with fa-refresh icon)</span>
+        <span class="visually-hidden">Loading example (with fa-refresh icon)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
         <i class="fa fa-cog fa-spin fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading example (with fa-cog icon)</span>
+        <span class="visually-hidden">Loading example (with fa-cog icon)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
         <i class="fa fa-spinner fa-pulse fa-3x fa-fw margin-bottom"></i>
-        <span class="sr-only">Loading example (with fa-spinner icon)</span>
+        <span class="visually-hidden">Loading example (with fa-spinner icon)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </p>
     </div>
     <div class="col-md-9 col-sm-8">
@@ -289,13 +289,13 @@ current, borne back ceaselessly into the past.
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Loading...<span class="nt">&lt;/span&gt;</span>
 </code></pre></div>
       <p class="alert alert-success">
-        <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i><strong class="sr-only">Note:</strong>
+        <i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i><strong class="visually-hidden">Note:</strong> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         Some browsers on some platforms have issues with animated icons resulting in a jittery wobbling effect. See
         <a href="https://github.com/FortAwesome/Font-Awesome/issues/671" class="alert-link" target="_blank">issue #671</a>
         for examples and possible workarounds.
       </p>
       <p class="alert alert-success">
-        <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i><strong class="sr-only">Note:</strong> CSS3 animations aren't supported in IE8 - IE9.
+        <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i><strong class="visually-hidden">Note:</strong> CSS3 animations aren't supported in IE8 - IE9. <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </p>
     </div>
   </div>
@@ -550,10 +550,10 @@ fa-ban on fa-camera
 
       <p>
         <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-        <span class="sr-only">Refreshing...</span>
+        <span class="visually-hidden">Refreshing...</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
         <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-        <span class="sr-only">Saving. Hang tight!</span>
+        <span class="visually-hidden">Saving. Hang tight!</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </p>
 
       <p>
@@ -575,7 +575,7 @@ fa-ban on fa-camera
 
       <p>
         <i class="fa fa-battery-half" aria-hidden="true"></i>
-        <span class="sr-only">Battery level: 50%</span>
+        <span class="visually-hidden">Battery level: 50%</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </p>
     </div>
     <div class="col-md-9 col-sm-8">
@@ -662,7 +662,7 @@ fa-ban on fa-camera
       </div>
       <div class="modal-body">
         <div class="row margin-bottom-lg margin-top">
-          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-end padding-right-sm"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <i class="fas fas-trophy-alt fas-3x fas-fw text-muted hidden-xs"></i>
             <i class="fas fas-trophy-alt fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
           </div>
@@ -674,7 +674,7 @@ fa-ban on fa-camera
           </div>
         </div>
         <div class="row margin-bottom-lg">
-          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-end padding-right-sm"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <i class="fas fas-flask fas-3x fas-fw text-muted hidden-xs"></i>
             <i class="fas fas-flask fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
           </div>
@@ -686,7 +686,7 @@ fa-ban on fa-camera
           </div>
         </div>
         <div class="row margin-bottom-lg">
-          <div class="col-md-2 col-sm-2 col-xs-2 text-right padding-right-sm">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-end padding-right-sm"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <i class="fas fas-rocket fas-3x fas-fw text-muted hidden-xs"></i>
             <i class="fas fas-rocket fas-2x fas-fw text-muted hidden-sm hidden-md hidden-lg"></i>
           </div>

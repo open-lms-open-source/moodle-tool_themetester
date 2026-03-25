@@ -1420,7 +1420,7 @@ echo $OUTPUT->heading($strheading);
   <div class="bs-example" data-example-id="glyphicons-accessibility">
     <div class="alert alert-danger" role="alert">
       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-      <span class="sr-only">Error:</span>
+      <span class="visually-hidden">Error:</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       Enter a valid email address
     </div>
   </div>
@@ -1898,7 +1898,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-default">Default</button>
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -1912,7 +1912,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -1926,7 +1926,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-success">Success</button>
       <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -1940,7 +1940,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-info">Info</button>
       <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -1954,7 +1954,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-warning">Warning</button>
       <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -1968,7 +1968,7 @@ echo $OUTPUT->heading($strheading);
       <button type="button" class="btn btn-danger">Danger</button>
       <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
         <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
+        <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </button>
       <ul class="dropdown-menu" role="menu">
         <li><a href="#">Action</a></li>
@@ -2079,7 +2079,7 @@ echo $OUTPUT->heading($strheading);
         <button type="button" class="btn btn-default">Dropup</button>
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
           <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
+          <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </button>
         <ul class="dropdown-menu" role="menu">
           <li><a href="#">Action</a></li>
@@ -2093,7 +2093,7 @@ echo $OUTPUT->heading($strheading);
         <button type="button" class="btn btn-primary">Right dropup</button>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
           <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
+          <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </button>
         <ul class="dropdown-menu dropdown-menu-right" role="menu">
           <li><a href="#">Action</a></li>
@@ -2373,7 +2373,7 @@ echo $OUTPUT->heading($strheading);
             <button type="button" class="btn btn-default">Action</button>
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
+              <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </button>
             <ul class="dropdown-menu" role="menu">
               <li><a href="#">Action</a></li>
@@ -2393,7 +2393,7 @@ echo $OUTPUT->heading($strheading);
             <button type="button" class="btn btn-default">Action</button>
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               <span class="caret"></span>
-              <span class="sr-only">Toggle Dropdown</span>
+              <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </button>
             <ul class="dropdown-menu dropdown-menu-right" role="menu">
               <li><a href="#">Action</a></li>
@@ -2634,7 +2634,7 @@ echo $OUTPUT->heading($strheading);
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2645,7 +2645,7 @@ echo $OUTPUT->heading($strheading);
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">Link <span class="visually-hidden">(current)</span></a></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <li><a href="#">Link</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -2661,7 +2661,7 @@ echo $OUTPUT->heading($strheading);
             </li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
+            <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
@@ -2715,7 +2715,7 @@ echo $OUTPUT->heading($strheading);
         <span class="nt">&lt;/li&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
@@ -2770,7 +2770,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2779,7 +2779,7 @@ echo $OUTPUT->heading($strheading);
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
           <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
+            <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
@@ -2789,7 +2789,7 @@ echo $OUTPUT->heading($strheading);
     </nav>
   </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
@@ -2813,7 +2813,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2840,7 +2840,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2863,7 +2863,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2897,7 +2897,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2937,7 +2937,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2978,7 +2978,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3012,7 +3012,7 @@ echo $OUTPUT->heading($strheading);
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -3116,7 +3116,7 @@ echo $OUTPUT->heading($strheading);
     <nav>
       <ul class="pagination">
         <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">1 <span class="visually-hidden">(current)</span></a></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
@@ -3553,7 +3553,7 @@ echo $OUTPUT->heading($strheading);
   <div class="bs-example" data-example-id="simple-progress-bar">
     <div class="progress">
       <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-        <span class="sr-only">60% Complete</span>
+        <span class="visually-hidden">60% Complete</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
   </div>
@@ -3607,22 +3607,22 @@ echo $OUTPUT->heading($strheading);
   <div class="bs-example" data-example-id="contextual-progress-bar">
     <div class="progress">
       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-        <span class="sr-only">40% Complete (success)</span>
+        <span class="visually-hidden">40% Complete (success)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-        <span class="sr-only">20% Complete</span>
+        <span class="visually-hidden">20% Complete</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-        <span class="sr-only">60% Complete (warning)</span>
+        <span class="visually-hidden">60% Complete (warning)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-        <span class="sr-only">80% Complete (danger)</span>
+        <span class="visually-hidden">80% Complete (danger)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
   </div>
@@ -3652,22 +3652,22 @@ echo $OUTPUT->heading($strheading);
   <div class="bs-example" data-example-id="striped-progress-bar">
     <div class="progress">
       <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-        <span class="sr-only">40% Complete (success)</span>
+        <span class="visually-hidden">40% Complete (success)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-        <span class="sr-only">20% Complete</span>
+        <span class="visually-hidden">20% Complete</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-        <span class="sr-only">60% Complete (warning)</span>
+        <span class="visually-hidden">60% Complete (warning)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-        <span class="sr-only">80% Complete (danger)</span>
+        <span class="visually-hidden">80% Complete (danger)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
   </div>
@@ -3696,7 +3696,7 @@ echo $OUTPUT->heading($strheading);
   <p>Add <code>.active</code> to <code>.progress-bar-striped</code> to animate the stripes right to left. Not available in IE9 and below.</p>
   <div class="bs-example" data-example-id="animated-progress-bar">
     <div class="progress">
-      <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="sr-only">45% Complete</span></div>
+      <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="visually-hidden">45% Complete</span></div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </div>
     <button type="button" class="btn btn-default bs-docs-activate-animated-progressbar" data-toggle="button" aria-pressed="false" autocomplete="off">Toggle animation</button>
   </div>
@@ -3711,13 +3711,13 @@ echo $OUTPUT->heading($strheading);
   <div class="bs-example" data-example-id="stacked-progress-bar">
     <div class="progress">
       <div class="progress-bar progress-bar-success" style="width: 35%">
-        <span class="sr-only">35% Complete (success)</span>
+        <span class="visually-hidden">35% Complete (success)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
       <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
-        <span class="sr-only">20% Complete (warning)</span>
+        <span class="visually-hidden">20% Complete (warning)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
       <div class="progress-bar progress-bar-danger" style="width: 10%">
-        <span class="sr-only">10% Complete (danger)</span>
+        <span class="visually-hidden">10% Complete (danger)</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </div>
     </div>
   </div>

@@ -117,9 +117,9 @@ echo $OUTPUT->heading($strheading);
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor01">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Features</a>
@@ -131,8 +131,8 @@ echo $OUTPUT->heading($strheading);
                       <a class="nav-link" href="#">About</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
@@ -147,9 +147,9 @@ echo $OUTPUT->heading($strheading);
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor02">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Features</a>
@@ -161,8 +161,8 @@ echo $OUTPUT->heading($strheading);
                       <a class="nav-link" href="#">About</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
@@ -177,9 +177,9 @@ echo $OUTPUT->heading($strheading);
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor03">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Features</a>
@@ -191,8 +191,8 @@ echo $OUTPUT->heading($strheading);
                       <a class="nav-link" href="#">About</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
@@ -355,13 +355,13 @@ echo $OUTPUT->heading($strheading);
 
             <div class="bs-component" style="margin-bottom: 15px;">
               <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group mr-2" role="group" aria-label="First group">
+                <div class="btn-group me-2" role="group" aria-label="First group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                   <button type="button" class="btn btn-secondary">1</button>
                   <button type="button" class="btn btn-secondary">2</button>
                   <button type="button" class="btn btn-secondary">3</button>
                   <button type="button" class="btn btn-secondary">4</button>
                 </div>
-                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <div class="btn-group me-2" role="group" aria-label="Second group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                   <button type="button" class="btn btn-secondary">5</button>
                   <button type="button" class="btn btn-secondary">6</button>
                   <button type="button" class="btn btn-secondary">7</button>
@@ -456,7 +456,7 @@ echo $OUTPUT->heading($strheading);
           </div>
           <div class="col-lg-4">
             <div class="bs-component">
-              <blockquote class="blockquote text-right">
+              <blockquote class="blockquote text-end"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
               </blockquote>
@@ -570,22 +570,22 @@ echo $OUTPUT->heading($strheading);
               <form>
                 <fieldset>
                   <legend>Legend</legend>
-                  <div class="form-group row">
+                  <div class="mb-3 row"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
                       <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleSelect1">Example select</label>
                     <select class="form-control" id="exampleSelect1">
                       <option>1</option>
@@ -595,7 +595,7 @@ echo $OUTPUT->heading($strheading);
                       <option>5</option>
                     </select>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleSelect2">Example multiple select</label>
                     <select multiple class="form-control" id="exampleSelect2">
                       <option>1</option>
@@ -605,16 +605,16 @@ echo $OUTPUT->heading($strheading);
                       <option>5</option>
                     </select>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleTextarea">Example textarea</label>
                     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="exampleInputFile">File input</label>
                     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                     <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
                   </div>
-                  <fieldset class="form-group">
+                  <fieldset class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <legend>Radio buttons</legend>
                     <div class="form-check">
                       <label class="form-check-label">
@@ -635,7 +635,7 @@ echo $OUTPUT->heading($strheading);
                       </label>
                     </div>
                   </fieldset>
-                  <fieldset class="form-group">
+                  <fieldset class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <legend>Checkboxes</legend>
                     <div class="form-check">
                       <label class="form-check-label">
@@ -658,58 +658,54 @@ echo $OUTPUT->heading($strheading);
           <div class="col-lg-4 offset-lg-1">
 
             <form class="bs-component">
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <fieldset disabled>
                   <label class="control-label" for="disabledInput">Disabled input</label>
                   <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
                 </fieldset>
               </div>
 
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <fieldset>
                   <label class="control-label" for="readOnlyInput">Readonly input</label>
                   <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
                 </fieldset>
               </div>
 
-              <div class="form-group has-success">
+              <div class="mb-3 has-success"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="form-control-label" for="inputSuccess1">Valid input</label>
                 <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
                 <div class="valid-feedback">Success! You've done it.</div>
               </div>
 
-              <div class="form-group has-danger">
+              <div class="mb-3 has-danger"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="form-control-label" for="inputDanger1">Invalid input</label>
                 <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
                 <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
               </div>
 
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
                 <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
               </div>
 
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="col-form-label" for="inputDefault">Default input</label>
                 <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
               </div>
 
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
                 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
               </div>
 
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label class="control-label">Input addons</label>
-                <div class="form-group">
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
+                  <div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
                       <span class="input-group-text">$</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <div class="input-group-append">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
                       <span class="input-group-text">.00</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -718,39 +714,39 @@ echo $OUTPUT->heading($strheading);
             <div class="bs-component">
               <fieldset>
                 <legend>Custom forms</legend>
-                <div class="form-group">
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, 4 lines. -->
+                  <div class="form-check custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" checked>
+                    <label class="form-check-label" for="customRadio1">Toggle this custom radio</label>
                   </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                  <div class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, 3 lines. -->
+                    <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+                    <label class="form-check-label" for="customRadio2">Or toggle this other custom radio</label>
                   </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled>
-                    <label class="custom-control-label" for="customRadio3">Disabled custom radio</label>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-                  </div>
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck2" disabled>
-                    <label class="custom-control-label" for="customCheck2">Disabled custom checkbox</label>
+                  <div class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, 3 lines. -->
+                    <input type="radio" id="customRadio3" name="customRadio" class="form-check-input" disabled>
+                    <label class="form-check-label" for="customRadio3">Disabled custom radio</label>
                   </div>
                 </div>
-                <div class="form-group">
-                  <select class="custom-select">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, 4 lines. -->
+                  <div class="form-check custom-checkbox">
+                    <input type="checkbox" class="form-check-input" id="customCheck1" checked>
+                    <label class="form-check-label" for="customCheck1">Check this custom checkbox</label>
+                  </div>
+                  <div class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, 3 lines. -->
+                    <input type="checkbox" class="form-check-input" id="customCheck2" disabled>
+                    <label class="form-check-label" for="customCheck2">Disabled custom checkbox</label>
+                  </div>
+                </div>
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+                  <select class="form-select">
                     <option selected>Open this select menu</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="custom-file">
                     <input type="file" id="file2" class="custom-file-input">
                     <span class="custom-file-control"></span>
@@ -1053,24 +1049,26 @@ echo $OUTPUT->heading($strheading);
         <div>
           <h2>Badges</h2>
           <div class="bs-component" style="margin-bottom: 40px;">
-            <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-secondary">Secondary</span>
-            <span class="badge badge-success">Success</span>
-            <span class="badge badge-danger">Danger</span>
-            <span class="badge badge-warning">Warning</span>
-            <span class="badge badge-info">Info</span>
-            <span class="badge badge-light">Light</span>
-            <span class="badge badge-dark">Dark</span>
+            <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, next 8 lines. -->
+            <span class="badge text-bg-primary">Primary</span>
+            <span class="badge text-bg-secondary">Secondary</span>
+            <span class="badge text-bg-success">Success</span>
+            <span class="badge text-bg-danger">Danger</span>
+            <span class="badge text-bg-warning">Warning</span>
+            <span class="badge text-bg-info">Info</span>
+            <span class="badge text-bg-light">Light</span>
+            <span class="badge text-bg-dark">Dark</span>
           </div>
           <div class="bs-component">
-            <span class="badge badge-pill badge-primary">Primary</span>
-            <span class="badge badge-pill badge-secondary">Secondary</span>
-            <span class="badge badge-pill badge-success">Success</span>
-            <span class="badge badge-pill badge-danger">Danger</span>
-            <span class="badge badge-pill badge-warning">Warning</span>
-            <span class="badge badge-pill badge-info">Info</span>
-            <span class="badge badge-pill badge-light">Light</span>
-            <span class="badge badge-pill badge-dark">Dark</span>
+            <!-- Open LMS patch for INT-21810, fixed bs4 deprecations, next 8 lines. -->
+            <span class="badge rounded-pill text-bg-primary">Primary</span>
+            <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+            <span class="badge rounded-pill text-bg-success">Success</span>
+            <span class="badge rounded-pill text-bg-danger">Danger</span>
+            <span class="badge rounded-pill text-bg-warning">Warning</span>
+            <span class="badge rounded-pill text-bg-info">Info</span>
+            <span class="badge rounded-pill text-bg-light">Light</span>
+            <span class="badge rounded-pill text-bg-dark">Dark</span>
           </div>
         </div>
       </div>
@@ -1182,15 +1180,15 @@ echo $OUTPUT->heading($strheading);
               <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                   Cras justo odio
-                  <span class="badge badge-primary badge-pill">14</span>
+                  <span class="badge text-bg-primary rounded-pill">14</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                   Dapibus ac facilisis in
-                  <span class="badge badge-primary badge-pill">2</span>
+                  <span class="badge text-bg-primary rounded-pill">2</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                   Morbi leo risus
-                  <span class="badge badge-primary badge-pill">1</span>
+                  <span class="badge text-bg-primary rounded-pill">1</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                 </li>
               </ul>
             </div>

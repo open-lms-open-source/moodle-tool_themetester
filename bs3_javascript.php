@@ -362,11 +362,11 @@ echo $OUTPUT->heading($strheading);
           </div>
           <div class="modal-body">
             <form>
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label for="recipient-name" class="control-label">Recipient:</label>
                 <input type="text" class="form-control" id="recipient-name">
               </div>
-              <div class="form-group">
+              <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                 <label for="message-text" class="control-label">Message:</label>
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
@@ -394,11 +394,11 @@ echo $OUTPUT->heading($strheading);
       <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;form&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
             <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"recipient-name"</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Recipient:<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"recipient-name"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
             <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message-text"</span> <span class="na">class=</span><span class="s">"control-label"</span><span class="nt">&gt;</span>Message:<span class="nt">&lt;/label&gt;</span>
             <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"message-text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
@@ -548,7 +548,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -740,7 +740,7 @@ echo $OUTPUT->heading($strheading);
       <div class="container-fluid">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -2069,11 +2069,11 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
       </div>
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
       <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </div>
   </div><!-- /example -->
@@ -2162,11 +2162,11 @@ sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</
       </div>
       <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
       <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </div>
   </div><!-- /example -->

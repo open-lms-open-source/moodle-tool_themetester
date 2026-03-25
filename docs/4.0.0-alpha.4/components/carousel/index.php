@@ -889,11 +889,11 @@ echo $OUTPUT->heading($strheading);
   </div>
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="icon-prev" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
     <span class="icon-next" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   </a>
 </div>
 </div>
@@ -972,11 +972,11 @@ echo $OUTPUT->heading($strheading);
     </div>
     <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
       <span class="icon-prev" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </a>
     <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
       <span class="icon-next" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </a>
   </div>
 </div>

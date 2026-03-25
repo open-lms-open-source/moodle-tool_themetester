@@ -1225,11 +1225,11 @@ echo $OUTPUT->heading($strheading);
         </div>
         <div class="modal-body">
           <form>
-            <div class="form-group">
+            <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <label for="recipient-name" class="form-control-label">Recipient:</label>
               <input type="text" class="form-control" id="recipient-name" />
             </div>
-            <div class="form-group">
+            <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <label for="message-text" class="form-control-label">Message:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
@@ -1259,11 +1259,11 @@ echo $OUTPUT->heading($strheading);
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;form&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"recipient-name"</span> <span class="na">class=</span><span class="s">"form-control-label"</span><span class="nt">&gt;</span>Recipient:<span class="nt">&lt;/label&gt;</span>
               <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"recipient-name"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"mb-3"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
               <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"message-text"</span> <span class="na">class=</span><span class="s">"form-control-label"</span><span class="nt">&gt;</span>Message:<span class="nt">&lt;/label&gt;</span>
               <span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"message-text"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
             <span class="nt">&lt;/div&gt;</span>

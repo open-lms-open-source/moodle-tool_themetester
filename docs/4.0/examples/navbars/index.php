@@ -25,9 +25,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample01">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -44,7 +44,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search" aria-label="Search">
         </form>
       </div>
@@ -57,15 +57,15 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search">
         </form>
       </div>
@@ -78,9 +78,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample03">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -97,7 +97,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search">
         </form>
       </div>
@@ -110,9 +110,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -129,7 +129,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search">
         </form>
       </div>
@@ -142,9 +142,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -161,7 +161,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search">
         </form>
       </div>
@@ -174,9 +174,9 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample06">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -193,7 +193,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-md-0">
+        <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <input class="form-control" type="text" placeholder="Search">
         </form>
       </div>
@@ -207,9 +207,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample07">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -226,7 +226,7 @@
               </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-md-0">
+          <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </form>
         </div>
@@ -241,7 +241,7 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Centered nav only <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Centered nav only <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -269,9 +269,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExample09">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -288,7 +288,7 @@
               </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-md-0">
+          <form class="d-flex flex-wrap align-items-center my-2 my-md-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             <input class="form-control" type="text" placeholder="Search" aria-label="Search">
           </form>
         </div>
@@ -302,7 +302,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Centered nav only <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Centered nav only <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>

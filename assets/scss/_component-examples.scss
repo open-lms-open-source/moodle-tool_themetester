@@ -170,7 +170,7 @@
         display: block;
     }
 
-    > .form-group:last-child {
+    > .mb-3:last-child { // Open LMS patch for INT-21810, fixed bs4 deprecation
         margin-bottom: 0;
     }
 

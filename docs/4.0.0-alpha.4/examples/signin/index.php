@@ -24,9 +24,9 @@
 
       <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
+        <label for="inputEmail" class="visually-hidden">Email address</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
+        <label for="inputPassword" class="visually-hidden">Password</label> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">
           <label>

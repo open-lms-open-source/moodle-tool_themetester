@@ -25,9 +25,9 @@
       </button>
 
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <li class="nav-item active">
-            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Dashboard <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Notifications</a>
@@ -47,8 +47,8 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+          <input class="form-control me-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
@@ -59,7 +59,7 @@
         <a class="nav-link active" href="#">Dashboard</a>
         <a class="nav-link" href="#">
           Friends
-          <span class="badge badge-pill bg-light align-text-bottom">27</span>
+          <span class="badge rounded-pill bg-light align-text-bottom">27</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </a>
         <a class="nav-link" href="#">Explore</a>
         <a class="nav-link" href="#">Suggestions</a>
@@ -73,7 +73,7 @@
 
     <main role="main" class="container">
       <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
-        <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+        <img class="me-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <div class="lh-100">
           <h6 class="mb-0 text-white lh-100">Bootstrap</h6>
           <small>Since 2011</small>
@@ -83,27 +83,27 @@
       <div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <strong class="d-block text-gray-dark">@username</strong>
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           </p>
         </div>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <strong class="d-block text-gray-dark">@username</strong>
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           </p>
         </div>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <strong class="d-block text-gray-dark">@username</strong>
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
           </p>
         </div>
-        <small class="d-block text-right mt-3">
+        <small class="d-block text-end mt-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <a href="#">All updates</a>
         </small>
       </div>
@@ -111,7 +111,7 @@
       <div class="my-3 p-3 bg-white rounded box-shadow">
         <h6 class="border-bottom border-gray pb-2 mb-0">Suggestions</h6>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <div class="d-flex justify-content-between align-items-center w-100">
               <strong class="text-gray-dark">Full Name</strong>
@@ -121,7 +121,7 @@
           </div>
         </div>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <div class="d-flex justify-content-between align-items-center w-100">
               <strong class="text-gray-dark">Full Name</strong>
@@ -131,7 +131,7 @@
           </div>
         </div>
         <div class="media text-muted pt-3">
-          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+          <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="me-2 rounded"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <div class="d-flex justify-content-between align-items-center w-100">
               <strong class="text-gray-dark">Full Name</strong>
@@ -140,7 +140,7 @@
             <span class="d-block">@username</span>
           </div>
         </div>
-        <small class="d-block text-right mt-3">
+        <small class="d-block text-end mt-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <a href="#">All suggestions</a>
         </small>
       </div>

@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -339,7 +339,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Float</h1>
           <p class="bd-lead">Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
           <h2 id="overview">Overview</h2>
@@ -351,12 +351,12 @@ echo $OUTPUT->heading($strheading);
 <p>Toggle a float with a class:</p>
 
 <div class="bd-example">
-<div class="float-left">Float left on all viewport sizes</div><br />
-<div class="float-right">Float right on all viewport sizes</div><br />
+<div class="float-start">Float left on all viewport sizes</div><br /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+<div class="float-end">Float right on all viewport sizes</div><br />
 <div class="float-none">Don't float on all viewport sizes</div>
 </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-left"</span><span class="nt">&gt;</span>Float left on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-right"</span><span class="nt">&gt;</span>Float right on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-start"</span><span class="nt">&gt;</span>Float left on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-end"</span><span class="nt">&gt;</span>Float right on all viewport sizes<span class="nt">&lt;/div&gt;&lt;br&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"float-none"</span><span class="nt">&gt;</span>Don't float on all viewport sizes<span class="nt">&lt;/div&gt;</span></code></pre></div>
 
 <h2 id="mixins">Mixins</h2>
@@ -364,10 +364,10 @@ echo $OUTPUT->heading($strheading);
 <p>Or by Sass mixin:</p>
 
 <figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.element</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">float-left</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">float-start</span><span class="p">;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 <span class="p">}</span>
 <span class="nc">.another-element</span> <span class="p">{</span>
-  <span class="k">@include</span> <span class="nd">float-right</span><span class="p">;</span>
+  <span class="k">@include</span> <span class="nd">float-end</span><span class="p">;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 <span class="p">}</span>
 <span class="nc">.one-more</span> <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">float-none</span><span class="p">;</span>
@@ -391,8 +391,8 @@ echo $OUTPUT->heading($strheading);
 <p>Here are all the support classes;</p>
 
 <ul>
-  <li><code class="highlighter-rouge">.float-left</code></li>
-  <li><code class="highlighter-rouge">.float-right</code></li>
+  <li><code class="highlighter-rouge">.float-start</code></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines -->
+  <li><code class="highlighter-rouge">.float-end</code></li>
   <li><code class="highlighter-rouge">.float-none</code></li>
   <li><code class="highlighter-rouge">.float-sm-left</code></li>
   <li><code class="highlighter-rouge">.float-sm-right</code></li>

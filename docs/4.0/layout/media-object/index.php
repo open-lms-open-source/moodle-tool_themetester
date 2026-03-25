@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -340,7 +340,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Media object</h1>
           <p class="bd-lead">Documentation and examples for Bootstrap’s media object to construct highly repetitive components like blog comments, tweets, and the like.</p>
           <h2 id="example">Example</h2>
@@ -351,7 +351,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="media">
-  <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="media-body">
     <h5 class="mt-0">Media heading</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -380,13 +380,13 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="media">
-  <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="media-body">
     <h5 class="mt-0">Media heading</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
     <div class="media mt-3">
-      <a class="pr-3" href="#">
+      <a class="pe-3" href="#">
         <img data-src="holder.js/64x64" alt="Generic placeholder image" />
       </a>
       <div class="media-body">
@@ -421,7 +421,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-start mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-start me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="media-body">
     <h5 class="mt-0">Top-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -440,7 +440,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-center mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-center me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="media-body">
     <h5 class="mt-0">Center-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -459,7 +459,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <div class="media">
-  <img class="align-self-end mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="align-self-end me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <div class="media-body">
     <h5 class="mt-0">Bottom-aligned media</h5>
     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -486,7 +486,7 @@ echo $OUTPUT->heading($strheading);
     <h5 class="mt-0 mb-1">Media object</h5>
     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
   </div>
-  <img class="ml-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+  <img class="ms-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
@@ -504,21 +504,21 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <ul class="list-unstyled">
   <li class="media">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
     </div>
   </li>
   <li class="media my-4">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
     </div>
   </li>
   <li class="media">
-    <img class="mr-3" data-src="holder.js/64x64" alt="Generic placeholder image" />
+    <img class="me-3" data-src="holder.js/64x64" alt="Generic placeholder image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <div class="media-body">
       <h5 class="mt-0 mb-1">List-based media object</h5>
       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.

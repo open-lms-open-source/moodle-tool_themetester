@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -357,7 +357,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Navbar</h1>
           <p class="bd-lead">Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
           <h2 id="how-it-works">How it works</h2>
@@ -398,9 +398,9 @@ echo $OUTPUT->heading($strheading);
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -420,8 +420,8 @@ echo $OUTPUT->heading($strheading);
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+    <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+      <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -539,7 +539,7 @@ echo $OUTPUT->heading($strheading);
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Features</a>
@@ -587,7 +587,7 @@ echo $OUTPUT->heading($strheading);
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <a class="nav-item nav-link" href="#">Features</a>
       <a class="nav-item nav-link" href="#">Pricing</a>
       <a class="nav-item nav-link disabled" href="#">Disabled</a>
@@ -621,7 +621,7 @@ echo $OUTPUT->heading($strheading);
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Features</a>
@@ -679,8 +679,8 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+  <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+    <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
@@ -697,8 +697,8 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <nav class="navbar navbar-light bg-light justify-content-between">
   <a class="navbar-brand">Navbar</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+  <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+    <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
 </nav>
@@ -715,11 +715,9 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <div class="input-group">
-      <div class="input-group-prepend">
+  <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
+    <div class="input-group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
         <span class="input-group-text" id="basic-addon1">@</span>
-      </div>
       <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
     </div>
   </form>
@@ -740,7 +738,7 @@ echo $OUTPUT->heading($strheading);
 
 <div class="bd-example">
 <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
+  <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     <button class="btn btn-outline-success" type="button">Main button</button>
     <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
   </form>
@@ -779,9 +777,9 @@ echo $OUTPUT->heading($strheading);
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Features</a>
@@ -831,9 +829,9 @@ echo $OUTPUT->heading($strheading);
     </button>
 
     <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -845,8 +843,8 @@ echo $OUTPUT->heading($strheading);
           <a class="nav-link" href="#">About</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+      <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+        <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -859,9 +857,9 @@ echo $OUTPUT->heading($strheading);
     </button>
 
     <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -873,8 +871,8 @@ echo $OUTPUT->heading($strheading);
           <a class="nav-link" href="#">About</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+      <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+        <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -887,9 +885,9 @@ echo $OUTPUT->heading($strheading);
     </button>
 
     <div class="collapse navbar-collapse" id="navbarColor03">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav me-auto"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Features</a>
@@ -901,8 +899,8 @@ echo $OUTPUT->heading($strheading);
           <a class="nav-link" href="#">About</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+      <form class="d-flex flex-wrap align-items-center"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+        <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
@@ -1014,9 +1012,9 @@ echo $OUTPUT->heading($strheading);
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <a class="navbar-brand" href="#">Hidden brand</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav me-auto mt-2 mt-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -1025,8 +1023,8 @@ echo $OUTPUT->heading($strheading);
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+    <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+      <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -1066,9 +1064,9 @@ echo $OUTPUT->heading($strheading);
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav me-auto mt-2 mt-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -1077,8 +1075,8 @@ echo $OUTPUT->heading($strheading);
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" />
+    <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+      <input class="form-control me-sm-2" type="search" placeholder="Search" />
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -1119,9 +1117,9 @@ echo $OUTPUT->heading($strheading);
   <a class="navbar-brand" href="#">Navbar</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul class="navbar-nav me-auto mt-2 mt-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -1130,8 +1128,8 @@ echo $OUTPUT->heading($strheading);
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+    <form class="d-flex flex-wrap align-items-center my-2 my-lg-0"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 2 lines. -->
+      <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" />
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>

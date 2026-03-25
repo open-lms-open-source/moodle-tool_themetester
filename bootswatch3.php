@@ -59,7 +59,7 @@ echo $OUTPUT->heading($strheading);
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
+                      <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. --> 
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -69,7 +69,7 @@ echo $OUTPUT->heading($strheading);
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="#">Link <span class="visually-hidden">(current)</span></a></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                       <li><a href="#">Link</a></li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -85,7 +85,7 @@ echo $OUTPUT->heading($strheading);
                       </li>
                     </ul>
                     <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
+                      <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                         <input type="text" class="form-control" placeholder="Search">
                       </div>
                       <button type="submit" class="btn btn-default">Submit</button>
@@ -103,7 +103,7 @@ echo $OUTPUT->heading($strheading);
                 <div class="container-fluid">
                   <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                      <span class="sr-only">Toggle navigation</span>
+                      <span class="visually-hidden">Toggle navigation</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
@@ -113,7 +113,7 @@ echo $OUTPUT->heading($strheading);
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="#">Link <span class="visually-hidden">(current)</span></a></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
                       <li><a href="#">Link</a></li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -129,7 +129,7 @@ echo $OUTPUT->heading($strheading);
                       </li>
                     </ul>
                     <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
+                      <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                         <input type="text" class="form-control" placeholder="Search">
                       </div>
                       <button type="submit" class="btn btn-default">Submit</button>
@@ -478,13 +478,13 @@ echo $OUTPUT->heading($strheading);
               <form class="form-horizontal">
                 <fieldset>
                   <legend>Legend</legend>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-10">
                       <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="inputPassword" class="col-lg-2 control-label">Password</label>
                     <div class="col-lg-10">
                       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
@@ -495,14 +495,14 @@ echo $OUTPUT->heading($strheading);
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="textArea" class="col-lg-2 control-label">Textarea</label>
                     <div class="col-lg-10">
                       <textarea class="form-control" rows="3" id="textArea"></textarea>
                       <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label class="col-lg-2 control-label">Radios</label>
                     <div class="col-lg-10">
                       <div class="radio">
@@ -519,7 +519,7 @@ echo $OUTPUT->heading($strheading);
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <label for="select" class="col-lg-2 control-label">Selects</label>
                     <div class="col-lg-10">
                       <select class="form-control" id="select">
@@ -539,7 +539,7 @@ echo $OUTPUT->heading($strheading);
                       </select>
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                     <div class="col-lg-10 col-lg-offset-2">
                       <button type="reset" class="btn btn-default">Cancel</button>
                       <button type="submit" class="btn btn-primary">Submit</button>
@@ -552,47 +552,47 @@ echo $OUTPUT->heading($strheading);
           <div class="col-lg-4 col-lg-offset-1">
 
               <form class="bs-component">
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="focusedInput">Focused input</label>
                   <input class="form-control" id="focusedInput" type="text" value="This is focused...">
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="disabledInput">Disabled input</label>
                   <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
                 </div>
 
-                <div class="form-group has-warning">
+                <div class="mb-3 has-warning"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputWarning">Input warning</label>
                   <input type="text" class="form-control" id="inputWarning">
                 </div>
 
-                <div class="form-group has-error">
+                <div class="mb-3 has-error"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputError">Input error</label>
                   <input type="text" class="form-control" id="inputError">
                 </div>
 
-                <div class="form-group has-success">
+                <div class="mb-3 has-success"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputSuccess">Input success</label>
                   <input type="text" class="form-control" id="inputSuccess">
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputLarge">Large input</label>
                   <input class="form-control input-lg" type="text" id="inputLarge">
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputDefault">Default input</label>
                   <input type="text" class="form-control" id="inputDefault">
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label" for="inputSmall">Small input</label>
                   <input class="form-control input-sm" type="text" id="inputSmall">
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <label class="control-label">Input addons</label>
                   <div class="input-group">
                     <span class="input-group-addon">$</span>

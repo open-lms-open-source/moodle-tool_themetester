@@ -24,7 +24,7 @@
       <a class="navbar-brand" href="#">Project name</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>

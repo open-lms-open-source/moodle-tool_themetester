@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -343,7 +343,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Borders</h1>
           <p class="bd-lead">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p>
           <h2 id="border">Border</h2>
@@ -357,14 +357,14 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <span class="border"></span>
 <span class="border-top"></span>
-<span class="border-right"></span>
+<span class="border-end"></span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 <span class="border-bottom"></span>
-<span class="border-left"></span>
+<span class="border-start"></span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 </div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border"</span><span class="nt">&gt;&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-top"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-right"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-end"</span><span class="nt">&gt;&lt;/span&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-left"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-start"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 
 </div>
 
@@ -375,14 +375,14 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example">
 <span class="border-0"></span>
 <span class="border-top-0"></span>
-<span class="border-right-0"></span>
+<span class="border-end-0"></span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 <span class="border-bottom-0"></span>
-<span class="border-left-0"></span>
+<span class="border-start-0"></span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 </div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-top-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-right-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-end-0"</span><span class="nt">&gt;&lt;/span&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-bottom-0"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-left-0"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"border-start-0"</span><span class="nt">&gt;&lt;/span&gt;</span></code></pre></div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
 
 </div>
 
@@ -421,9 +421,9 @@ echo $OUTPUT->heading($strheading);
 <div class="bd-example bd-example-images">
   <img data-src="holder.js/75x75" class="rounded" alt="Example rounded image" />
   <img data-src="holder.js/75x75" class="rounded-top" alt="Example top rounded image" />
-  <img data-src="holder.js/75x75" class="rounded-right" alt="Example right rounded image" />
+  <img data-src="holder.js/75x75" class="rounded-end" alt="Example right rounded image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <img data-src="holder.js/75x75" class="rounded-bottom" alt="Example bottom rounded image" />
-  <img data-src="holder.js/75x75" class="rounded-left" alt="Example left rounded image" />
+  <img data-src="holder.js/75x75" class="rounded-start" alt="Example left rounded image" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <img data-src="holder.js/75x75" class="rounded-circle" alt="Completely round image" />
   <img data-src="holder.js/75x75" class="rounded-0" alt="Example non-rounded image (overrides rounding applied elsewhere)" />
 </div>

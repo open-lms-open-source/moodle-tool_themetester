@@ -2024,7 +2024,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   height: 3.166667rem;
 }
 
-.form-group {
+.mb-3 { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   margin-bottom: 1rem;
 }
 
@@ -2099,7 +2099,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-success .form-control-label,
 .has-success .form-check-label,
 .has-success .form-check-inline,
-.has-success .custom-control {
+.has-success .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #5cb85c;
 }
 
@@ -2125,7 +2125,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-warning .form-control-label,
 .has-warning .form-check-label,
 .has-warning .form-check-inline,
-.has-warning .custom-control {
+.has-warning .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #f0ad4e;
 }
 
@@ -2151,7 +2151,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .has-danger .form-control-label,
 .has-danger .form-check-label,
 .has-danger .form-check-inline,
-.has-danger .custom-control {
+.has-danger .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #d9534f;
 }
 
@@ -2174,49 +2174,49 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 @media (min-width: 544px) {
-  .form-inline .form-group {
+  .d-flex.flex-wrap.align-items-center .mb-3 { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control {
+  .d-flex.flex-wrap.align-items-center .form-control { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .form-control-static {
+  .d-flex.flex-wrap.align-items-center .form-control-static { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     display: inline-block;
   }
-  .form-inline .input-group {
+  .d-flex.flex-wrap.align-items-center .input-group { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     display: inline-table;
     vertical-align: middle;
   }
-  .form-inline .input-group .input-group-addon,
-  .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control {
+  .d-flex.flex-wrap.align-items-center .input-group .input-group-addon, /* Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines */
+  .d-flex.flex-wrap.align-items-center .input-group .input-group-btn,
+  .d-flex.flex-wrap.align-items-center .input-group .form-control {
     width: auto;
   }
-  .form-inline .input-group > .form-control {
+  .d-flex.flex-wrap.align-items-center .input-group > .form-control { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     width: 100%;
   }
-  .form-inline .form-control-label {
+  .d-flex.flex-wrap.align-items-center .form-control-label { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-check {
+  .d-flex.flex-wrap.align-items-center .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-check-label {
+  .d-flex.flex-wrap.align-items-center .form-check-label { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     padding-left: 0;
   }
-  .form-inline .form-check-input {
+  .d-flex.flex-wrap.align-items-center .form-check-input { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     position: relative;
     margin-left: 0;
   }
-  .form-inline .has-feedback .form-control-feedback {
+  .d-flex.flex-wrap.align-items-center .has-feedback .form-control-feedback { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
     top: 0;
   }
 }
@@ -3357,44 +3357,44 @@ input[type="button"].btn-block {
   z-index: 3;
 }
 
-.custom-control {
+.form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   position: relative;
   display: inline;
   padding-left: 1.5rem;
   cursor: pointer;
 }
 
-.custom-control + .custom-control {
+.form-check + .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   margin-left: 1rem;
 }
 
-.custom-control-input {
+.form-check-input { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.custom-control-input:checked ~ .custom-control-indicator {
+.form-check-input:checked ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #fff;
   background-color: #0074d9;
 }
 
-.custom-control-input:focus ~ .custom-control-indicator {
+.form-check-input:focus ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   -webkit-box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
           box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
 }
 
-.custom-control-input:active ~ .custom-control-indicator {
+.form-check-input:active ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #fff;
   background-color: #84c6ff;
 }
 
-.custom-control-input:disabled ~ .custom-control-indicator {
+.form-check-input:disabled ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   cursor: not-allowed;
   background-color: #eee;
 }
 
-.custom-control-input:disabled ~ .custom-control-description {
+.form-check-input:disabled ~ .custom-control-description { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   color: #767676;
   cursor: not-allowed;
 }
@@ -3422,11 +3422,11 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+.custom-checkbox .form-check-input:checked ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 
-.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
+.custom-checkbox .form-check-input:indeterminate ~ .custom-control-indicator { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   background-color: #0074d9;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
 }
@@ -3439,21 +3439,21 @@ input[type="button"].btn-block {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-.custom-controls-stacked .custom-control {
+.custom-controls-stacked .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   display: inline;
 }
 
-.custom-controls-stacked .custom-control::after {
+.custom-controls-stacked .form-check::after { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   display: block;
   margin-bottom: 0.25rem;
   content: "";
 }
 
-.custom-controls-stacked .custom-control + .custom-control {
+.custom-controls-stacked .form-check + .form-check { /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   margin-left: 0;
 }
 
-.custom-select {
+.form-select { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   display: inline-block;
   max-width: 100%;
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
@@ -3470,27 +3470,27 @@ input[type="button"].btn-block {
   -webkit-appearance: none;
 }
 
-.custom-select:focus {
+.form-select:focus { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   border-color: #51a7e8;
   outline: none;
 }
 
-.custom-select:focus::-ms-value {
+.form-select:focus::-ms-value { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   color: #55595c;
   background-color: #fff;
 }
 
-.custom-select:disabled {
+.form-select:disabled { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   color: #818a91;
   cursor: not-allowed;
   background-color: #eceeef;
 }
 
-.custom-select::-ms-expand {
+.form-select::-ms-expand { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   opacity: 0;
 }
 
-.custom-select-sm {
+.form-select-sm { /* Open LMS patch for INT-21810, fixed bs4 deprecation */
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
@@ -5839,7 +5839,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   }
 }
 
-.sr-only {
+.visually-hidden {  /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -5850,7 +5850,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   border: 0;
 }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.visually-hidden-focusable:active, .visually-hidden-focusable:focus {  /* Open LMS patch for INT-21810, fixed bs4 deprecation. */
   position: static;
   width: auto;
   height: auto;

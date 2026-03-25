@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -357,7 +357,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">List group</h1>
           <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
           <h2 id="basic-example">Basic example</h2>
@@ -572,30 +572,30 @@ echo $OUTPUT->heading($strheading);
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Cras justo odio
-    <span class="badge badge-primary badge-pill">14</span>
+    <span class="badge text-bg-primary rounded-pill">14</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Dapibus ac facilisis in
-    <span class="badge badge-primary badge-pill">2</span>
+    <span class="badge text-bg-primary rounded-pill">2</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     Morbi leo risus
-    <span class="badge badge-primary badge-pill">1</span>
+    <span class="badge text-bg-primary rounded-pill">1</span> <!-- Open LMS  patch for INT-21810, fixed bs4 deprecation. -->
   </li>
 </ul>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item d-flex justify-content-between align-items-center"</span><span class="nt">&gt;</span>
     Cras justo odio
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-primary badge-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge text-bg-primary rounded-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item d-flex justify-content-between align-items-center"</span><span class="nt">&gt;</span>
     Dapibus ac facilisis in
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-primary badge-pill"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge text-bg-primary rounded-pill"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item d-flex justify-content-between align-items-center"</span><span class="nt">&gt;</span>
     Morbi leo risus
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-primary badge-pill"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge text-bg-primary rounded-pill"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 

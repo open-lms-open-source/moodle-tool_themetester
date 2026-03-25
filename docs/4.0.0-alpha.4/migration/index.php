@@ -950,7 +950,7 @@ echo $OUTPUT->heading($strheading);
   <li>Horizontal forms overhauled:
     <ul>
       <li>Dropped the <code class="highlighter-rouge">.form-horizontal</code> class requirement.</li>
-      <li><code class="highlighter-rouge">.form-group</code> no longer applies styles from the <code class="highlighter-rouge">.row</code> via mixin, so <code class="highlighter-rouge">.row</code> is now required for horizontal grid layouts (e.g., <code class="highlighter-rouge">&lt;div class="form-group row"&gt;</code>).</li>
+      <li><code class="highlighter-rouge">.form-group</code> no longer applies styles from the <code class="highlighter-rouge">.row</code> via mixin, so <code class="highlighter-rouge">.row</code> is now required for horizontal grid layouts (e.g., <code class="highlighter-rouge">&lt;div class="mb-3 row"&gt;</code>).</li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
       <li>Added new <code class="highlighter-rouge">.form-control-label</code> class to vertically center labels with <code class="highlighter-rouge">.form-control</code>s.</li>
     </ul>
   </li>

@@ -1183,7 +1183,7 @@ echo $OUTPUT->heading($strheading);
       <div class="input-group-btn">
         <button type="button" class="btn btn-secondary">Action</button>
         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="sr-only">Toggle Dropdown</span>
+          <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </button>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">Action</a>
@@ -1202,7 +1202,7 @@ echo $OUTPUT->heading($strheading);
       <div class="input-group-btn">
         <button type="button" class="btn btn-secondary">Action</button>
         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="sr-only">Toggle Dropdown</span>
+          <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
         </button>
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item" href="#">Action</a>

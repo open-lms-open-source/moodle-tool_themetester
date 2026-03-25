@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -350,7 +350,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Input group</h1>
           <p class="bd-lead">Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs.</p>
           <h2 id="basic-example">Basic example</h2>
@@ -358,42 +358,30 @@ echo $OUTPUT->heading($strheading);
 <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input. <strong>We do not support multiple form-controls in a single input group</strong> and <code class="highlighter-rouge">&lt;label&gt;</code>s must come outside the input group.</p>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="basic-addon1">@</span>
-  </div>
   <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
 </div>
 
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="basic-addon2">@example.com</span>
-  </div>
 </div>
 
 <label for="basic-url">Your vanity URL</label>
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-  </div>
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" />
 </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">$</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">.00</span>
-  </div>
 </div>
 
-<div class="input-group">
-  <div class="input-group-prepend">
+<div class="input-group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">With textarea</span>
-  </div>
   <textarea class="form-control" aria-label="With textarea"></textarea>
 </div>
 </div>
@@ -443,24 +431,18 @@ echo $OUTPUT->heading($strheading);
 <p><strong>Sizing on the individual input group elements isn’t supported.</strong></p>
 
 <div class="bd-example">
-<div class="input-group input-group-sm mb-3">
-  <div class="input-group-prepend">
+<div class="input-group input-group-sm mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
-  </div>
   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
 </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-  </div>
   <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" />
 </div>
 
-<div class="input-group input-group-lg">
-  <div class="input-group-prepend">
+<div class="input-group input-group-lg"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
-  </div>
   <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
 </div>
 </div>
@@ -490,21 +472,17 @@ echo $OUTPUT->heading($strheading);
 <p>Place any checkbox or radio option within an input group’s addon instead of text.</p>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <div class="input-group-text">
       <input type="checkbox" aria-label="Checkbox for following text input" />
     </div>
-  </div>
   <input type="text" class="form-control" aria-label="Text input with checkbox" />
 </div>
 
-<div class="input-group">
-  <div class="input-group-prepend">
+<div class="input-group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <div class="input-group-text">
     <input type="radio" aria-label="Radio button for following text input" />
     </div>
-  </div>
   <input type="text" class="form-control" aria-label="Text input with radio button" />
 </div>
 </div>
@@ -531,10 +509,8 @@ echo $OUTPUT->heading($strheading);
 <p>While multiple <code class="highlighter-rouge">&lt;input&gt;</code>s are supported visually, validation styles are only available for input groups with a single <code class="highlighter-rouge">&lt;input&gt;</code>.</p>
 
 <div class="bd-example">
-<div class="input-group">
-  <div class="input-group-prepend">
+<div class="input-group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">First and last name</span>
-  </div>
   <input type="text" class="form-control" />
   <input type="text" class="form-control" />
 </div>
@@ -552,20 +528,16 @@ echo $OUTPUT->heading($strheading);
 <p>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</p>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">$</span>
     <span class="input-group-text">0.00</span>
-  </div>
   <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
 </div>
 
 <div class="input-group">
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">$</span>
     <span class="input-group-text">0.00</span>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
@@ -587,34 +559,26 @@ echo $OUTPUT->heading($strheading);
 <h2 id="button-addons">Button addons</h2>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
   <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" />
 </div>
 
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
 </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
   <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" />
 </div>
 
 <div class="input-group">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
@@ -650,8 +614,7 @@ echo $OUTPUT->heading($strheading);
 <h2 id="buttons-with-dropdowns">Buttons with dropdowns</h2>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -660,13 +623,11 @@ echo $OUTPUT->heading($strheading);
       <div role="separator" class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
-  </div>
   <input type="text" class="form-control" aria-label="Text input with dropdown button" />
 </div>
 
 <div class="input-group">
-  <input type="text" class="form-control" aria-label="Text input with dropdown button" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" aria-label="Text input with dropdown button" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -675,7 +636,6 @@ echo $OUTPUT->heading($strheading);
       <div role="separator" class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
@@ -709,11 +669,10 @@ echo $OUTPUT->heading($strheading);
 <h2 id="segmented-buttons">Segmented buttons</h2>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button type="button" class="btn btn-outline-secondary">Action</button>
     <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -722,16 +681,14 @@ echo $OUTPUT->heading($strheading);
       <div role="separator" class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
-  </div>
   <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" />
 </div>
 
 <div class="input-group">
-  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" />
-  <div class="input-group-append">
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" /> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button type="button" class="btn btn-outline-secondary">Action</button>
     <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="sr-only">Toggle Dropdown</span>
+      <span class="visually-hidden">Toggle Dropdown</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">Action</a>
@@ -740,7 +697,6 @@ echo $OUTPUT->heading($strheading);
       <div role="separator" class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
     </div>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
@@ -784,11 +740,9 @@ echo $OUTPUT->heading($strheading);
 <h3 id="custom-select">Custom select</h3>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <label class="input-group-text" for="inputGroupSelect01">Options</label>
-  </div>
-  <select class="custom-select" id="inputGroupSelect01">
+  <select class="form-select" id="inputGroupSelect01"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <option selected="">Choose...</option>
     <option value="1">One</option>
     <option value="2">Two</option>
@@ -797,22 +751,18 @@ echo $OUTPUT->heading($strheading);
 </div>
 
 <div class="input-group mb-3">
-  <select class="custom-select" id="inputGroupSelect02">
+  <select class="form-select" id="inputGroupSelect02"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <option selected="">Choose...</option>
     <option value="1">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
-  </select>
-  <div class="input-group-append">
+  </select> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <label class="input-group-text" for="inputGroupSelect02">Options</label>
-  </div>
 </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
-  <select class="custom-select" id="inputGroupSelect03">
+  <select class="form-select" id="inputGroupSelect03"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <option selected="">Choose...</option>
     <option value="1">One</option>
     <option value="2">Two</option>
@@ -821,22 +771,20 @@ echo $OUTPUT->heading($strheading);
 </div>
 
 <div class="input-group">
-  <select class="custom-select" id="inputGroupSelect04">
+  <select class="form-select" id="inputGroupSelect04"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <option selected="">Choose...</option>
     <option value="1">One</option>
     <option value="2">Two</option>
     <option value="3">Three</option>
-  </select>
-  <div class="input-group-append">
+  </select> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">for=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>Options<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"custom-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect01"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Choose...<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
@@ -845,7 +793,7 @@ echo $OUTPUT->heading($strheading);
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"custom-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect02"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect02"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Choose...<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
@@ -860,7 +808,7 @@ echo $OUTPUT->heading($strheading);
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"custom-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect03"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect03"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Choose...<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
@@ -869,7 +817,7 @@ echo $OUTPUT->heading($strheading);
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"custom-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect04"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">class=</span><span class="s">"form-select"</span> <span class="na">id=</span><span class="s">"inputGroupSelect04"</span><span class="nt">&gt;</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
     <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>Choose...<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
     <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
@@ -883,10 +831,8 @@ echo $OUTPUT->heading($strheading);
 <h3 id="custom-file-input">Custom file input</h3>
 
 <div class="bd-example">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">Upload</span>
-  </div>
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile01" />
     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
@@ -897,16 +843,12 @@ echo $OUTPUT->heading($strheading);
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile02" />
     <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-  </div>
-  <div class="input-group-append">
+  </div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <span class="input-group-text">Upload</span>
-  </div>
 </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
+<div class="input-group mb-3"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile03" />
     <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
@@ -917,10 +859,8 @@ echo $OUTPUT->heading($strheading);
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile04" />
     <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
-  </div>
-  <div class="input-group-append">
+  </div> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
     <button class="btn btn-outline-secondary" type="button">Button</button>
-  </div>
 </div>
 </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>

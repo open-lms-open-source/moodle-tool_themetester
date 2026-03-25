@@ -86,7 +86,7 @@ echo $OUTPUT->heading($strheading);
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <form class="bd-search d-flex align-items-center">
   <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
-  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ms-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 </button>
 </form>
 
@@ -339,7 +339,7 @@ echo $OUTPUT->heading($strheading);
           </div>
         
 
-        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 ps-md-5 bd-content" role="main"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           <h1 class="bd-title" id="content">Text</h1>
           <p class="bd-lead">Documentation and examples for common text utilities to control alignment, wrapping, weight, and more.</p>
           <h2 id="text-alignment">Text alignment</h2>
@@ -354,9 +354,9 @@ echo $OUTPUT->heading($strheading);
 <p>For left, right, and center alignment, responsive classes are available that use the same viewport width breakpoints as the grid system.</p>
 
 <div class="bd-example">
-<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-start">Left aligned text on all viewport sizes.</p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 <p class="text-center">Center aligned text on all viewport sizes.</p>
-<p class="text-right">Right aligned text on all viewport sizes.</p>
+<p class="text-end">Right aligned text on all viewport sizes.</p> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
 
 <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
 <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>

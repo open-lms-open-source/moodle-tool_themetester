@@ -859,7 +859,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -870,7 +870,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
   </ul>
@@ -920,11 +920,11 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
     <li class="page-item active">
-      <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+      <a class="page-link" href="#">1 <span class="visually-hidden">(current)</span></a> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
     </li>
     <li class="page-item"><a class="page-link" href="#">2</a></li>
     <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -933,7 +933,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
   </ul>
@@ -971,10 +971,10 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item disabled">
       <span class="page-link" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </span>
     </li>
-    <li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li>
+    <li class="page-item active"><span class="page-link">1 <span class="visually-hidden">(current)</span></span></li> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
   </ul>
 </nav>
 </div>
@@ -1000,7 +1000,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1009,7 +1009,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
   </ul>
@@ -1041,7 +1041,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
+        <span class="visually-hidden">Previous</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -1050,7 +1050,7 @@ echo $OUTPUT->heading($strheading);
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
+        <span class="visually-hidden">Next</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
       </a>
     </li>
   </ul>

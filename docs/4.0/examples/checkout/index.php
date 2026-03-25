@@ -29,7 +29,7 @@
         <div class="col-md-4 order-md-2 mb-4">
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Your cart</span>
-            <span class="badge badge-secondary badge-pill">3</span>
+            <span class="badge text-bg-secondary rounded-pill">3</span> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation. -->
           </h4>
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -68,10 +68,8 @@
 
           <form class="card p-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
-              <div class="input-group-append">
+              <input type="text" class="form-control" placeholder="Promo code"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
                 <button type="submit" class="btn btn-secondary">Redeem</button>
-              </div>
             </div>
           </form>
         </div>
@@ -97,10 +95,8 @@
 
             <div class="mb-3">
               <label for="username">Username</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
+              <div class="input-group"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, deleted 2 lines -->
                   <span class="input-group-text">@</span>
-                </div>
                 <input type="text" class="form-control" id="username" placeholder="Username" required>
                 <div class="invalid-feedback" style="width: 100%;">
                   Your username is required.
@@ -132,7 +128,7 @@
             <div class="row">
               <div class="col-md-5 mb-3">
                 <label for="country">Country</label>
-                <select class="custom-select d-block w-100" id="country" required>
+                <select class="form-select d-block w-100" id="country" required> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <option value="">Choose...</option>
                   <option>United States</option>
                 </select>
@@ -142,7 +138,7 @@
               </div>
               <div class="col-md-4 mb-3">
                 <label for="state">State</label>
-                <select class="custom-select d-block w-100" id="state" required>
+                <select class="form-select d-block w-100" id="state" required> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation -->
                   <option value="">Choose...</option>
                   <option>California</option>
                 </select>
@@ -159,30 +155,30 @@
               </div>
             </div>
             <hr class="mb-4">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="same-address">
-              <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+            <div class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines. -->
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
             </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info">
-              <label class="custom-control-label" for="save-info">Save this information for next time</label>
+            <div class="form-check custom-checkbox"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines. -->
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Save this information for next time</label>
             </div>
             <hr class="mb-4">
 
             <h4 class="mb-3">Payment</h4>
 
             <div class="d-block my-3">
-              <div class="custom-control custom-radio">
-                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                <label class="custom-control-label" for="credit">Credit card</label>
+              <div class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines. -->
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Credit card</label>
               </div>
-              <div class="custom-control custom-radio">
-                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                <label class="custom-control-label" for="debit">Debit card</label>
+              <div class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines. -->
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Debit card</label>
               </div>
-              <div class="custom-control custom-radio">
-                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                <label class="custom-control-label" for="paypal">PayPal</label>
+              <div class="form-check custom-radio"> <!-- Open LMS patch for INT-21810, fixed bs4 deprecation, 3 lines. -->
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
               </div>
             </div>
             <div class="row">

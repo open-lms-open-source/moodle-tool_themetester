@@ -125,7 +125,7 @@ $select->set_label('This is a label for the select');
 $select->tooltip = 'This is the tooltip';
 //this doesn't seem to work - moodle bug?
 //$select->add_confirm_action('Confirm you want to do this');
-$select->set_help_icon('activities', 'moodle');
+$select->set_help_icon('activities_help', 'tool_themetester'); // Open LMS patch for INT-21810, fix Behat test.
 echo $OUTPUT->render($select);
 
 echo \core\output\html_writer::tag('p', 'A url select form. Typically used for navigation.');

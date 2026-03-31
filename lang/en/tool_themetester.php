@@ -24,3 +24,5 @@
 
 $string['pluginname'] = 'Theme tester';
 $string['privacy:metadata'] = 'The Theme tester plugin does not store any personal data.';
+
+$string['activities_help'] = 'Activities, such as forums, quizzes and wikis, enable interactive content to be added to the course.'; // Open LMS patch for INT-21810, fix Behat test.
